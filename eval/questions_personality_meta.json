@@ -1,1 +1,19 @@
-[]
+[
+  {"id": "Q1", "type": "answerable", "question": "How many samples were included in this meta-analysis of mean-level personality change?"},
+  {"id": "Q2", "type": "answerable", "question": "In which age period did people increase most in social dominance, conscientiousness, and emotional stability?"},
+  {"id": "Q3", "type": "answerable", "question": "How did the authors split extraversion, and how do those two facets differ?"},
+  {"id": "Q4", "type": "answerable", "question": "Are rank-order consistency and mean-level change opposites?"},
+  {"id": "Q5", "type": "answerable", "question": "Did Costa and McCrae’s claim that personality shows little meaningful change after age 30 hold in this meta-analysis?"},
+  {"id": "Q6", "type": "answerable", "question": "What happened to agreeableness across the life course in this study?"},
+  {"id": "Q7", "type": "answerable", "question": "Which four moderators of mean-level personality change did the authors test?"},
+  {"id": "Q8", "type": "answerable", "question": "Did gender and attrition have large effects on personality change in this meta-analysis?"},
+  {"id": "Q9", "type": "partial", "question": "Why do personality traits change the most in young adulthood according to this paper?"},
+  {"id": "Q10", "type": "partial", "question": "How large is personality change over the entire life course according to this paper?"},
+  {"id": "Q11", "type": "partial", "question": "Do younger cohorts show more personality change than older cohorts in this meta-analysis?"},
+  {"id": "Q12", "type": "partial", "question": "Does this study prove that psychotherapy can change personality traits?"},
+  {"id": "Q13", "type": "unanswerable", "question": "What is the best 6-week therapy protocol to increase conscientiousness?"},
+  {"id": "Q14", "type": "unanswerable", "question": "What was the mean NEO Conscientiousness score of the 2006 University of Illinois undergraduate sample?"},
+  {"id": "Q15", "type": "unanswerable", "question": "How should GroundedDocs store chunk embeddings in pgvector?"},
+  {"id": "Q16", "type": "unanswerable", "question": "What percentage of variance in personality change is explained by genetics in this meta-analysis?"},
+  {"id": "Q17", "type": "unanswerable", "question": "Which specific CPI item showed the largest change for women aged 43–52 in Helson and Wink (1992)?"}
+]
