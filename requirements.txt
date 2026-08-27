@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+psycopg2-binary
+pgvector
+pydantic
+pydantic-settings
+python-multipart
+openai
+pymupdf
