@@ -1,14 +1,12 @@
 import uuid
 
-from openai import OpenAI
 from sqlalchemy.orm import Session
 
 from app.core.config import settings
+from app.core.llm import client
 from app.models.chunk import Chunk
 from app.schemas.answer import AnswerResponse
 from app.services.vector_store import retrieve_similar_chunks
-
-client = OpenAI(api_key=settings.OPENAI_API_KEY)
 
 SYSTEM_PROMPT = """
 You are a careful assistant that answers questions ONLY using the provided document chunks.
@@ -61,7 +59,7 @@ def answer_question(
         )
 
     response = client.chat.completions.create(
-        model="gpt-4o",
+        model=settings.CHAT_MODEL,
         temperature=0,
         response_format={"type": "json_object"},
         messages=[

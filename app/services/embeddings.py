@@ -1,10 +1,5 @@
-from openai import OpenAI
-
 from app.core.config import settings
-
-client = OpenAI(api_key=settings.OPENAI_API_KEY)
-
-EMBEDDING_MODEL = "text-embedding-3-small"
+from app.core.llm import client
 
 
 def get_embedding(text: str) -> list[float]:
@@ -14,6 +9,6 @@ def get_embedding(text: str) -> list[float]:
 
     response = client.embeddings.create(
         input=text,
-        model=EMBEDDING_MODEL,
+        model=settings.EMBEDDING_MODEL,
     )
     return response.data[0].embedding

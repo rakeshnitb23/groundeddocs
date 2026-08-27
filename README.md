@@ -62,6 +62,11 @@ apply.** Every document and chunk row carries a `user_id`, and retrieval filters
 it directly in the query. I'd rather cross-user leakage be structurally impossible
 than correct "as long as every endpoint remembers to filter."
 
+**Schema changes go through Alembic, not `create_all` on startup.** The API assumes
+the database is already migrated. `alembic upgrade head` creates the `vector`
+extension and the tables; startup only seeds the temporary user. That keeps schema
+changes reviewable and repeatable instead of implicit.
+
 **HNSW indexing, hybrid search, and re-ranking are deliberately deferred, not
 missing by accident.** The current corpus is small enough that a flat cosine scan
 over the chunk table is fine. Adding an approximate index or a re-ranking pass now
@@ -113,6 +118,7 @@ Interactive docs are available at `/docs` once the server is running.
 - **FastAPI** + **Pydantic** — API layer and request/response schemas
 - **PostgreSQL** + **pgvector** — relational storage and vector similarity search (cosine distance)
 - **SQLAlchemy** — ORM
+- **Alembic** — versioned schema migrations (`alembic upgrade head`)
 - **PyMuPDF (fitz)** — PDF text extraction
 - **OpenAI API** — `text-embedding-3-small` for embeddings, `gpt-4o` for grounded answering
 - **Docker Compose** — local Postgres/pgvector instance
@@ -128,11 +134,15 @@ Interactive docs are available at `/docs` once the server is running.
    ```
    pip install -r requirements.txt
    ```
-4. Run the API:
+4. Apply database migrations (creates the `vector` extension and tables):
+   ```
+   alembic upgrade head
+   ```
+5. Run the API:
    ```
    uvicorn app.main:app --reload
    ```
-5. Try the flow against `http://localhost:8000/docs`:
+6. Try the flow against `http://localhost:8000/docs`:
    - `POST /documents/upload` a PDF
    - `POST /documents/{document_id}/chunks`
    - `POST /documents/{document_id}/embed`
