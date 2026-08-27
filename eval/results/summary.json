@@ -1,0 +1,16 @@
+{
+  "n_questions": 17,
+  "case_counts": {
+    "correct_answer": 8,
+    "partial_ok_for_now": 4,
+    "correct_abstain": 4,
+    "false_answer": 1
+  },
+  "answer_rate_on_answerable": 1.0,
+  "abstention_recall": 0.8,
+  "false_answer_rate": 0.2,
+  "false_refusal_rate": 0.0,
+  "answers_with_at_least_one_citation": 1.0,
+  "avg_latency_ms": 3177.7,
+  "note": "Citation presence is automatic. Citation FAITHFULNESS (does the cited text support the claim) still needs a manual pass on eval/results/raw_results.json."
+}

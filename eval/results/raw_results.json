@@ -1,0 +1,272 @@
+[
+  {
+    "id": "Q1",
+    "type": "answerable",
+    "question": "How many samples were included in this meta-analysis of mean-level personality change?",
+    "expected": "answer",
+    "decision": "answer",
+    "answer": "92",
+    "citations": [
+      "b1637070-d38a-4a7e-b831-3b8f123a4805"
+    ],
+    "citation_count": 1,
+    "abstain_reason": null,
+    "latency_ms": 5893.1,
+    "case": "correct_answer",
+    "error": null
+  },
+  {
+    "id": "Q2",
+    "type": "answerable",
+    "question": "In which age period did people increase most in social dominance, conscientiousness, and emotional stability?",
+    "expected": "answer",
+    "decision": "answer",
+    "answer": "Most of the increase in social dominance, conscientiousness, and emotional stability occurred in young adulthood.",
+    "citations": [
+      "a48cb73a-9063-4d19-8e52-654faa11f767",
+      "642dd8aa-8134-4aa9-87f1-d60f82a31669"
+    ],
+    "citation_count": 2,
+    "abstain_reason": null,
+    "latency_ms": 2557.7,
+    "case": "correct_answer",
+    "error": null
+  },
+  {
+    "id": "Q3",
+    "type": "answerable",
+    "question": "How did the authors split extraversion, and how do those two facets differ?",
+    "expected": "answer",
+    "decision": "answer",
+    "answer": "The authors split extraversion into two facets: social vitality and social dominance. Social vitality is expected to decrease with age, while social dominance tends to increase with age. These two facets demonstrate distinctly different maturational patterns.",
+    "citations": [
+      "139dd749-132b-453a-b8ab-88ebf79bc4b3",
+      "754df137-c431-42b1-b524-4850b51974c5",
+      "f1314a6c-65c0-439a-a8fb-5fb9205f0f8b"
+    ],
+    "citation_count": 3,
+    "abstain_reason": null,
+    "latency_ms": 2993.3,
+    "case": "correct_answer",
+    "error": null
+  },
+  {
+    "id": "Q4",
+    "type": "answerable",
+    "question": "Are rank-order consistency and mean-level change opposites?",
+    "expected": "answer",
+    "decision": "answer",
+    "answer": "Rank-order consistency and mean-level change are not opposites; they are better thought of as independent or orthogonal constructs.",
+    "citations": [
+      "f6323289-5182-4e7e-8552-dfb7204e1457",
+      "c4886ced-0f7f-40cb-a7b7-7910f91d5a01",
+      "ae925c5a-ead2-45a1-973c-5fe95c5cf0af",
+      "a70c6f83-f24b-4b02-a1ae-91c3e17fa4b5"
+    ],
+    "citation_count": 4,
+    "abstain_reason": null,
+    "latency_ms": 3049.3,
+    "case": "correct_answer",
+    "error": null
+  },
+  {
+    "id": "Q5",
+    "type": "answerable",
+    "question": "Did Costa and McCrae\u2019s claim that personality shows little meaningful change after age 30 hold in this meta-analysis?",
+    "expected": "answer",
+    "decision": "answer",
+    "answer": "The meta-analysis found that personality trait change occurs well past age 30, contradicting Costa and McCrae's claim that there is little meaningful change after age 30.",
+    "citations": [
+      "f937bc8e-245c-406d-bad2-53a2a0405d52"
+    ],
+    "citation_count": 1,
+    "abstain_reason": null,
+    "latency_ms": 2352.1,
+    "case": "correct_answer",
+    "error": null
+  },
+  {
+    "id": "Q6",
+    "type": "answerable",
+    "question": "What happened to agreeableness across the life course in this study?",
+    "expected": "answer",
+    "decision": "answer",
+    "answer": "The study found that agreeableness generally increased across the life course, with a statistically significant increase observed in the age 50 to 60 period (d = .30, p < .05). However, up through the age 50 to 60 period, the changes were positive but included zero in their confidence intervals, indicating that the null hypothesis cannot be ruled out.",
+    "citations": [
+      "4476d654-9dbb-4b4a-98f6-b851cb24f75d",
+      "b694069e-d506-487d-9d31-cc83adcb36fa"
+    ],
+    "citation_count": 2,
+    "abstain_reason": null,
+    "latency_ms": 3167.3,
+    "case": "correct_answer",
+    "error": null
+  },
+  {
+    "id": "Q7",
+    "type": "answerable",
+    "question": "Which four moderators of mean-level personality change did the authors test?",
+    "expected": "answer",
+    "decision": "answer",
+    "answer": "The authors tested four moderators of mean-level personality change: sex, time between assessments, attrition, and cohort standing.",
+    "citations": [
+      "c7a50be9-8d45-4391-ba5b-535df061c060"
+    ],
+    "citation_count": 1,
+    "abstain_reason": null,
+    "latency_ms": 2771.2,
+    "case": "correct_answer",
+    "error": null
+  },
+  {
+    "id": "Q8",
+    "type": "answerable",
+    "question": "Did gender and attrition have large effects on personality change in this meta-analysis?",
+    "expected": "answer",
+    "decision": "answer",
+    "answer": "Gender and attrition did not have large effects on personality change in this meta-analysis. Attrition had no relationship with standardized mean-level changes in any domain of personality, and it was not a biasing factor in estimates of mean-level personality change over time.",
+    "citations": [
+      "0696ea8d-24e3-4621-9a82-520c699f6c3a",
+      "7e3715a5-10c6-47f1-a585-726a4c875d79",
+      "ae4e71fb-d5ca-41a5-b905-e689f83c812c"
+    ],
+    "citation_count": 3,
+    "abstain_reason": null,
+    "latency_ms": 4406.0,
+    "case": "correct_answer",
+    "error": null
+  },
+  {
+    "id": "Q9",
+    "type": "partial",
+    "question": "Why do personality traits change the most in young adulthood according to this paper?",
+    "expected": "either",
+    "decision": "answer",
+    "answer": "Personality traits change the most in young adulthood due to the critical nature of this period, where identities are resolved and people make commitments to life paths. This period is marked by significant social role experiences that contribute to personality trait changes.",
+    "citations": [
+      "d3e301f9-0022-4e40-b316-e8357d56a7cb",
+      "132d0edf-7bb3-44ff-b21b-842911c78207"
+    ],
+    "citation_count": 2,
+    "abstain_reason": null,
+    "latency_ms": 3480.3,
+    "case": "partial_ok_for_now",
+    "error": null
+  },
+  {
+    "id": "Q10",
+    "type": "partial",
+    "question": "How large is personality change over the entire life course according to this paper?",
+    "expected": "either",
+    "decision": "answer",
+    "answer": "The paper suggests that personality change over the entire life course is more than a trivial amount of change.",
+    "citations": [
+      "9a27f8e9-627d-4f34-98ac-a2bc11986c02"
+    ],
+    "citation_count": 1,
+    "abstain_reason": null,
+    "latency_ms": 4101.7,
+    "case": "partial_ok_for_now",
+    "error": null
+  },
+  {
+    "id": "Q11",
+    "type": "partial",
+    "question": "Do younger cohorts show more personality change than older cohorts in this meta-analysis?",
+    "expected": "either",
+    "decision": "abstain",
+    "answer": null,
+    "citations": [],
+    "citation_count": 0,
+    "abstain_reason": "The provided chunks do not contain specific information comparing the amount of personality change between younger and older cohorts in the meta-analysis.",
+    "latency_ms": 2349.6,
+    "case": "partial_ok_for_now",
+    "error": null
+  },
+  {
+    "id": "Q12",
+    "type": "partial",
+    "question": "Does this study prove that psychotherapy can change personality traits?",
+    "expected": "either",
+    "decision": "abstain",
+    "answer": null,
+    "citations": [],
+    "citation_count": 0,
+    "abstain_reason": "The provided chunks do not contain specific information about a study proving that psychotherapy can change personality traits. The chunks discuss personality change in general and mention meta-analyses and longitudinal studies, but do not specifically address psychotherapy's role in changing personality traits.",
+    "latency_ms": 2355.5,
+    "case": "partial_ok_for_now",
+    "error": null
+  },
+  {
+    "id": "Q13",
+    "type": "unanswerable",
+    "question": "What is the best 6-week therapy protocol to increase conscientiousness?",
+    "expected": "abstain",
+    "decision": "abstain",
+    "answer": null,
+    "citations": [],
+    "citation_count": 0,
+    "abstain_reason": "The provided chunks do not contain information about a specific 6-week therapy protocol to increase conscientiousness.",
+    "latency_ms": 1950.0,
+    "case": "correct_abstain",
+    "error": null
+  },
+  {
+    "id": "Q14",
+    "type": "unanswerable",
+    "question": "What was the mean NEO Conscientiousness score of the 2006 University of Illinois undergraduate sample?",
+    "expected": "abstain",
+    "decision": "abstain",
+    "answer": null,
+    "citations": [],
+    "citation_count": 0,
+    "abstain_reason": "The provided chunks do not contain information about the mean NEO Conscientiousness score of the 2006 University of Illinois undergraduate sample.",
+    "latency_ms": 2658.6,
+    "case": "correct_abstain",
+    "error": null
+  },
+  {
+    "id": "Q15",
+    "type": "unanswerable",
+    "question": "How should GroundedDocs store chunk embeddings in pgvector?",
+    "expected": "abstain",
+    "decision": "abstain",
+    "answer": null,
+    "citations": [],
+    "citation_count": 0,
+    "abstain_reason": "The provided chunks do not contain any information about how GroundedDocs should store chunk embeddings in pgvector.",
+    "latency_ms": 2395.7,
+    "case": "correct_abstain",
+    "error": null
+  },
+  {
+    "id": "Q16",
+    "type": "unanswerable",
+    "question": "What percentage of variance in personality change is explained by genetics in this meta-analysis?",
+    "expected": "abstain",
+    "decision": "answer",
+    "answer": "The heritability of personality trait change is around 30%.",
+    "citations": [
+      "739c4c6b-2c04-4b17-92c6-a9dac9a8dbea"
+    ],
+    "citation_count": 1,
+    "abstain_reason": null,
+    "latency_ms": 3235.3,
+    "case": "false_answer",
+    "error": null
+  },
+  {
+    "id": "Q17",
+    "type": "unanswerable",
+    "question": "Which specific CPI item showed the largest change for women aged 43\u201352 in Helson and Wink (1992)?",
+    "expected": "abstain",
+    "decision": "abstain",
+    "answer": null,
+    "citations": [],
+    "citation_count": 0,
+    "abstain_reason": "The provided chunks do not contain information about specific CPI items or their changes for women aged 43\u201352 in Helson and Wink (1992).",
+    "latency_ms": 4303.6,
+    "case": "correct_abstain",
+    "error": null
+  }
+]
