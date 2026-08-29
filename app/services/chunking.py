@@ -51,7 +51,7 @@ def create_chunks_for_document(
         raise ValueError("Raw PDF file not found on disk")
 
     doc = fitz.open(pdf_path)
-    full_text = "\n".join(page.get_text() for page in doc)
+    full_text = "\n".join(page.get_text() for page in doc) # type: ignore
     doc.close()
 
     text_chunks = simple_chunk_text(full_text)
