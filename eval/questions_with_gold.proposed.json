@@ -1,0 +1,11 @@
+[
+  {
+    "id": "Q1",
+    "question": "How many samples were included in this meta-analysis of mean-level personality change?",
+    "type": "answerable",
+    "gold_chunk_ids": [
+      "b1637070-d38a-4a7e-b831-3b8f123a4805"
+    ],
+    "notes": "b1637070-d38a-4a7e-b831-3b8f123a4805: number of samples 92"
+  }
+]

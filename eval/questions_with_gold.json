@@ -1,0 +1,157 @@
+[
+  {
+    "id": "Q1",
+    "question": "How many samples were included in this meta-analysis of mean-level personality change?",
+    "type": "answerable",
+    "gold_chunk_ids": [
+      "893ca34e-d89e-40a0-80e8-3842a56f5de6",
+      "ae925c5a-ead2-45a1-973c-5fe95c5cf0af"
+    ],
+    "notes": "PLACEHOLDER \u2014 random chunk IDs from eval/chunks.json, NOT human-verified gold. Do not report retrieval metrics from this file as a real baseline."
+  },
+  {
+    "id": "Q2",
+    "question": "In which age period did people increase most in social dominance, conscientiousness, and emotional stability?",
+    "type": "answerable",
+    "gold_chunk_ids": [
+      "aaf071ce-44b3-49ef-ab9a-c08da6b28352",
+      "642dd8aa-8134-4aa9-87f1-d60f82a31669"
+    ],
+    "notes": "PLACEHOLDER \u2014 random chunk IDs from eval/chunks.json, NOT human-verified gold. Do not report retrieval metrics from this file as a real baseline."
+  },
+  {
+    "id": "Q3",
+    "question": "How did the authors split extraversion, and how do those two facets differ?",
+    "type": "answerable",
+    "gold_chunk_ids": [
+      "58a832b1-0c5c-4352-8044-380686395d84",
+      "0c44f73d-83c2-462b-8563-9c12a65399b9"
+    ],
+    "notes": "PLACEHOLDER \u2014 random chunk IDs from eval/chunks.json, NOT human-verified gold. Do not report retrieval metrics from this file as a real baseline."
+  },
+  {
+    "id": "Q4",
+    "question": "Are rank-order consistency and mean-level change opposites?",
+    "type": "answerable",
+    "gold_chunk_ids": [
+      "ac738613-1288-48f3-af41-9b044118d83d",
+      "b8f02bd7-1ae8-4ab5-bdf9-00736af0dbdf"
+    ],
+    "notes": "PLACEHOLDER \u2014 random chunk IDs from eval/chunks.json, NOT human-verified gold. Do not report retrieval metrics from this file as a real baseline."
+  },
+  {
+    "id": "Q5",
+    "question": "Did Costa and McCrae\u2019s claim that personality shows little meaningful change after age 30 hold in this meta-analysis?",
+    "type": "answerable",
+    "gold_chunk_ids": [
+      "1edeb6ea-ae49-4538-9549-85ad5fdd0050",
+      "da805ef6-708c-4b5c-9e06-419b6c188c68"
+    ],
+    "notes": "PLACEHOLDER \u2014 random chunk IDs from eval/chunks.json, NOT human-verified gold. Do not report retrieval metrics from this file as a real baseline."
+  },
+  {
+    "id": "Q6",
+    "question": "What happened to agreeableness across the life course in this study?",
+    "type": "answerable",
+    "gold_chunk_ids": [
+      "e7da6bce-19ef-44cc-9b84-53a4606969e1",
+      "42c775e8-4aab-4589-9286-f92e231e05c1"
+    ],
+    "notes": "PLACEHOLDER \u2014 random chunk IDs from eval/chunks.json, NOT human-verified gold. Do not report retrieval metrics from this file as a real baseline."
+  },
+  {
+    "id": "Q7",
+    "question": "Which four moderators of mean-level personality change did the authors test?",
+    "type": "answerable",
+    "gold_chunk_ids": [
+      "a24eb8e2-2c10-4adb-959c-9b9ff13a8cb0",
+      "4dbb29a4-bd93-4b8a-a523-96e5a741967f"
+    ],
+    "notes": "PLACEHOLDER \u2014 random chunk IDs from eval/chunks.json, NOT human-verified gold. Do not report retrieval metrics from this file as a real baseline."
+  },
+  {
+    "id": "Q8",
+    "question": "Did gender and attrition have large effects on personality change in this meta-analysis?",
+    "type": "answerable",
+    "gold_chunk_ids": [
+      "4dc3003c-e330-418f-a56c-8323a6acc46d",
+      "8d4799c9-3207-4566-bb15-2e96f5f550f2"
+    ],
+    "notes": "PLACEHOLDER \u2014 random chunk IDs from eval/chunks.json, NOT human-verified gold. Do not report retrieval metrics from this file as a real baseline."
+  },
+  {
+    "id": "Q9",
+    "question": "Why do personality traits change the most in young adulthood according to this paper?",
+    "type": "partial",
+    "gold_chunk_ids": [
+      "c4886ced-0f7f-40cb-a7b7-7910f91d5a01",
+      "7057abd0-3f94-404a-bee6-fcee8b3e4a20"
+    ],
+    "notes": "PLACEHOLDER \u2014 random chunk IDs from eval/chunks.json, NOT human-verified gold. Do not report retrieval metrics from this file as a real baseline."
+  },
+  {
+    "id": "Q10",
+    "question": "How large is personality change over the entire life course according to this paper?",
+    "type": "partial",
+    "gold_chunk_ids": [
+      "aa6ea5ee-4eb3-4813-8246-46581dac63a2",
+      "b8f02bd7-1ae8-4ab5-bdf9-00736af0dbdf"
+    ],
+    "notes": "PLACEHOLDER \u2014 random chunk IDs from eval/chunks.json, NOT human-verified gold. Do not report retrieval metrics from this file as a real baseline."
+  },
+  {
+    "id": "Q11",
+    "question": "Do younger cohorts show more personality change than older cohorts in this meta-analysis?",
+    "type": "partial",
+    "gold_chunk_ids": [
+      "4eaf93c1-cac1-41b9-a1a9-4321f69f4c6c",
+      "d7fb48f4-c7ad-474a-bfb7-54cb0f5a9865"
+    ],
+    "notes": "PLACEHOLDER \u2014 random chunk IDs from eval/chunks.json, NOT human-verified gold. Do not report retrieval metrics from this file as a real baseline."
+  },
+  {
+    "id": "Q12",
+    "question": "Does this study prove that psychotherapy can change personality traits?",
+    "type": "partial",
+    "gold_chunk_ids": [
+      "73a73e9f-5766-4550-940c-0d233f6bc683",
+      "a500e650-c2b6-4fcb-a87a-54449421d7ad"
+    ],
+    "notes": "PLACEHOLDER \u2014 random chunk IDs from eval/chunks.json, NOT human-verified gold. Do not report retrieval metrics from this file as a real baseline."
+  },
+  {
+    "id": "Q13",
+    "question": "What is the best 6-week therapy protocol to increase conscientiousness?",
+    "type": "unanswerable",
+    "gold_chunk_ids": [],
+    "notes": "unanswerable \u2014 gold must stay empty. PLACEHOLDER \u2014 random chunk IDs from eval/chunks.json, NOT human-verified gold. Do not report retrieval metrics from this file as a real baseline."
+  },
+  {
+    "id": "Q14",
+    "question": "What was the mean NEO Conscientiousness score of the 2006 University of Illinois undergraduate sample?",
+    "type": "unanswerable",
+    "gold_chunk_ids": [],
+    "notes": "unanswerable \u2014 gold must stay empty. PLACEHOLDER \u2014 random chunk IDs from eval/chunks.json, NOT human-verified gold. Do not report retrieval metrics from this file as a real baseline."
+  },
+  {
+    "id": "Q15",
+    "question": "How should GroundedDocs store chunk embeddings in pgvector?",
+    "type": "unanswerable",
+    "gold_chunk_ids": [],
+    "notes": "unanswerable \u2014 gold must stay empty. PLACEHOLDER \u2014 random chunk IDs from eval/chunks.json, NOT human-verified gold. Do not report retrieval metrics from this file as a real baseline."
+  },
+  {
+    "id": "Q16",
+    "question": "What percentage of variance in personality change is explained by genetics in this meta-analysis?",
+    "type": "unanswerable",
+    "gold_chunk_ids": [],
+    "notes": "unanswerable \u2014 gold must stay empty. PLACEHOLDER \u2014 random chunk IDs from eval/chunks.json, NOT human-verified gold. Do not report retrieval metrics from this file as a real baseline."
+  },
+  {
+    "id": "Q17",
+    "question": "Which specific CPI item showed the largest change for women aged 43\u201352 in Helson and Wink (1992)?",
+    "type": "unanswerable",
+    "gold_chunk_ids": [],
+    "notes": "unanswerable \u2014 gold must stay empty. PLACEHOLDER \u2014 random chunk IDs from eval/chunks.json, NOT human-verified gold. Do not report retrieval metrics from this file as a real baseline."
+  }
+]

@@ -1,0 +1,287 @@
+{
+  "warning": "gold_chunk_ids in eval/questions_with_gold.json are RANDOM placeholders from eval/chunks.json, not human-verified evidence. These metrics are only to prove the scorer runs. Do not report them as a Week 2 baseline.",
+  "gold_source": "placeholder_random",
+  "k": 10,
+  "n_scored_questions": 12,
+  "recall@k": 0.083,
+  "precision@k": 0.017,
+  "mrr": 0.054,
+  "per_question": [
+    {
+      "id": "Q1",
+      "type": "answerable",
+      "gold_chunk_ids": [
+        "893ca34e-d89e-40a0-80e8-3842a56f5de6",
+        "ae925c5a-ead2-45a1-973c-5fe95c5cf0af"
+      ],
+      "retrieved_ids": [
+        "536600fd-60fd-474b-b514-16660d3f6bce",
+        "b1637070-d38a-4a7e-b831-3b8f123a4805",
+        "947466d1-283c-4ad7-aa4f-ca3997d48dd4",
+        "1edeb6ea-ae49-4538-9549-85ad5fdd0050",
+        "8afc2b7c-9b67-411d-aa3e-621c108b382e",
+        "fb66a9c0-a4d9-4514-ab99-e5a5a7e90d9c",
+        "bcc7a849-1fc9-4231-8b15-72b126eda082",
+        "0e16183f-fc65-49a4-bf97-e533e14579fa",
+        "c7a50be9-8d45-4391-ba5b-535df061c060",
+        "16b17b53-b30f-4e68-8787-b691d92bb3a2"
+      ],
+      "recall@k": 0.0,
+      "precision@k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "id": "Q2",
+      "type": "answerable",
+      "gold_chunk_ids": [
+        "aaf071ce-44b3-49ef-ab9a-c08da6b28352",
+        "642dd8aa-8134-4aa9-87f1-d60f82a31669"
+      ],
+      "retrieved_ids": [
+        "a48cb73a-9063-4d19-8e52-654faa11f767",
+        "642dd8aa-8134-4aa9-87f1-d60f82a31669",
+        "b694069e-d506-487d-9d31-cc83adcb36fa",
+        "66cea7de-9694-4a27-a2d8-268613733216",
+        "e24c7456-70d0-4160-a4cb-12b9d480176d",
+        "4eaf93c1-cac1-41b9-a1a9-4321f69f4c6c",
+        "f1314a6c-65c0-439a-a8fb-5fb9205f0f8b",
+        "65f8152d-5119-49be-badf-f8ccc1e84cd6",
+        "1e792a61-4383-402e-8b04-5186c35c5751",
+        "71240c8d-5adb-45ea-bc63-2433566508b9"
+      ],
+      "recall@k": 0.5,
+      "precision@k": 0.1,
+      "mrr": 0.5
+    },
+    {
+      "id": "Q3",
+      "type": "answerable",
+      "gold_chunk_ids": [
+        "58a832b1-0c5c-4352-8044-380686395d84",
+        "0c44f73d-83c2-462b-8563-9c12a65399b9"
+      ],
+      "retrieved_ids": [
+        "941538b0-3601-480e-9b54-669651d85d0b",
+        "139dd749-132b-453a-b8ab-88ebf79bc4b3",
+        "1a86312d-0007-47af-a6a6-340bad32bcc5",
+        "754df137-c431-42b1-b524-4850b51974c5",
+        "f1314a6c-65c0-439a-a8fb-5fb9205f0f8b",
+        "56637db2-c478-412e-a99c-3ca656cf8acb",
+        "65f8152d-5119-49be-badf-f8ccc1e84cd6",
+        "5b6e7ce9-c97e-43dd-a09a-ae26253666f9",
+        "7990b4b7-f2ae-482c-9ec7-6a14687cad1d",
+        "3f97f46c-22ff-45d0-8d57-55407be82afe"
+      ],
+      "recall@k": 0.0,
+      "precision@k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "id": "Q4",
+      "type": "answerable",
+      "gold_chunk_ids": [
+        "ac738613-1288-48f3-af41-9b044118d83d",
+        "b8f02bd7-1ae8-4ab5-bdf9-00736af0dbdf"
+      ],
+      "retrieved_ids": [
+        "f6323289-5182-4e7e-8552-dfb7204e1457",
+        "c4886ced-0f7f-40cb-a7b7-7910f91d5a01",
+        "ae925c5a-ead2-45a1-973c-5fe95c5cf0af",
+        "0c44f73d-83c2-462b-8563-9c12a65399b9",
+        "a70c6f83-f24b-4b02-a1ae-91c3e17fa4b5",
+        "da805ef6-708c-4b5c-9e06-419b6c188c68",
+        "ab857638-aed4-40f5-9e8b-e9e45326880f",
+        "3516f21f-277b-46ed-8938-d1a13f93ee0b",
+        "6a717181-7dcb-4da0-93b0-b0321167d584",
+        "2bd3e508-b44e-4fca-829a-26e1054c5a62"
+      ],
+      "recall@k": 0.0,
+      "precision@k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "id": "Q5",
+      "type": "answerable",
+      "gold_chunk_ids": [
+        "1edeb6ea-ae49-4538-9549-85ad5fdd0050",
+        "da805ef6-708c-4b5c-9e06-419b6c188c68"
+      ],
+      "retrieved_ids": [
+        "528fa19d-328d-470e-a253-0e5fe21292e9",
+        "7523956e-dd59-4144-ae81-3dcabc053fbc",
+        "d63bf22a-fe1e-4869-abb2-f414aafe35f6",
+        "619b9891-dd14-4dcf-9631-95ac1317b183",
+        "f937bc8e-245c-406d-bad2-53a2a0405d52",
+        "5a96976c-2e44-47ca-85b4-f583bfdaca70",
+        "983dd0d7-6803-435e-9ff4-09fca9268170",
+        "8d4799c9-3207-4566-bb15-2e96f5f550f2",
+        "19152090-29e8-46f0-9b62-f8f7ee32fbfb",
+        "016b43ed-3b56-4833-b40a-33b211ff8ec1"
+      ],
+      "recall@k": 0.0,
+      "precision@k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "id": "Q6",
+      "type": "answerable",
+      "gold_chunk_ids": [
+        "e7da6bce-19ef-44cc-9b84-53a4606969e1",
+        "42c775e8-4aab-4589-9286-f92e231e05c1"
+      ],
+      "retrieved_ids": [
+        "dfd2719b-e5b3-40d4-a0a6-2ade0876cb63",
+        "34ff7638-df37-4b81-9ca1-9e296b5cf3d1",
+        "4476d654-9dbb-4b4a-98f6-b851cb24f75d",
+        "aa6ea5ee-4eb3-4813-8246-46581dac63a2",
+        "b694069e-d506-487d-9d31-cc83adcb36fa",
+        "c7a50be9-8d45-4391-ba5b-535df061c060",
+        "345c3060-c4a6-4c2b-8faa-b0b09334d36a",
+        "361b24cc-3610-4bed-a30c-9620518783cf",
+        "22df9751-abef-4bd6-bc03-51ac2bec2c88",
+        "754df137-c431-42b1-b524-4850b51974c5"
+      ],
+      "recall@k": 0.0,
+      "precision@k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "id": "Q7",
+      "type": "answerable",
+      "gold_chunk_ids": [
+        "a24eb8e2-2c10-4adb-959c-9b9ff13a8cb0",
+        "4dbb29a4-bd93-4b8a-a523-96e5a741967f"
+      ],
+      "retrieved_ids": [
+        "1edeb6ea-ae49-4538-9549-85ad5fdd0050",
+        "c7a50be9-8d45-4391-ba5b-535df061c060",
+        "3c95b886-7dc7-47b3-a610-bae085a70891",
+        "fc426c25-c021-419c-9820-dc5527775ae8",
+        "18b91692-d98f-4cdb-9d43-15c0218ba5b9",
+        "46a11511-e900-4a14-9313-d24c53ddbc33",
+        "947466d1-283c-4ad7-aa4f-ca3997d48dd4",
+        "0696ea8d-24e3-4621-9a82-520c699f6c3a",
+        "b1637070-d38a-4a7e-b831-3b8f123a4805",
+        "536600fd-60fd-474b-b514-16660d3f6bce"
+      ],
+      "recall@k": 0.0,
+      "precision@k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "id": "Q8",
+      "type": "answerable",
+      "gold_chunk_ids": [
+        "4dc3003c-e330-418f-a56c-8323a6acc46d",
+        "8d4799c9-3207-4566-bb15-2e96f5f550f2"
+      ],
+      "retrieved_ids": [
+        "7e3715a5-10c6-47f1-a585-726a4c875d79",
+        "0696ea8d-24e3-4621-9a82-520c699f6c3a",
+        "ae4e71fb-d5ca-41a5-b905-e689f83c812c",
+        "1edeb6ea-ae49-4538-9549-85ad5fdd0050",
+        "016b43ed-3b56-4833-b40a-33b211ff8ec1",
+        "8afc2b7c-9b67-411d-aa3e-621c108b382e",
+        "da39973e-ba0a-49aa-8253-c8e760b0c3d2",
+        "a24eb8e2-2c10-4adb-959c-9b9ff13a8cb0",
+        "19152090-29e8-46f0-9b62-f8f7ee32fbfb",
+        "5a96976c-2e44-47ca-85b4-f583bfdaca70"
+      ],
+      "recall@k": 0.0,
+      "precision@k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "id": "Q9",
+      "type": "partial",
+      "gold_chunk_ids": [
+        "c4886ced-0f7f-40cb-a7b7-7910f91d5a01",
+        "7057abd0-3f94-404a-bee6-fcee8b3e4a20"
+      ],
+      "retrieved_ids": [
+        "23551b49-e92e-48bc-b5b1-4df2203c9508",
+        "9a27f8e9-627d-4f34-98ac-a2bc11986c02",
+        "132d0edf-7bb3-44ff-b21b-842911c78207",
+        "d3e301f9-0022-4e40-b316-e8357d56a7cb",
+        "0b10e09c-6cd6-4fc1-9f27-b31c47691c6e",
+        "03a6befa-4e5e-4912-8039-bf05bcfdbf6a",
+        "d497de0a-403a-4499-9996-da99b8a4b6f0",
+        "1a86312d-0007-47af-a6a6-340bad32bcc5",
+        "f937bc8e-245c-406d-bad2-53a2a0405d52",
+        "eb3bade2-cea8-43ca-a062-9e0efa3b10c6"
+      ],
+      "recall@k": 0.0,
+      "precision@k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "id": "Q10",
+      "type": "partial",
+      "gold_chunk_ids": [
+        "aa6ea5ee-4eb3-4813-8246-46581dac63a2",
+        "b8f02bd7-1ae8-4ab5-bdf9-00736af0dbdf"
+      ],
+      "retrieved_ids": [
+        "f13a2ac7-481d-4780-a2b3-c5533a5ffd0b",
+        "9a27f8e9-627d-4f34-98ac-a2bc11986c02",
+        "e8ef1b45-72c7-4474-96c2-dcf3d36a247e",
+        "d497de0a-403a-4499-9996-da99b8a4b6f0",
+        "536600fd-60fd-474b-b514-16660d3f6bce",
+        "8afc2b7c-9b67-411d-aa3e-621c108b382e",
+        "3052075f-b413-4742-a58e-cc9f39c726a6",
+        "d63bf22a-fe1e-4869-abb2-f414aafe35f6",
+        "754df137-c431-42b1-b524-4850b51974c5",
+        "6f91dfff-880f-40e9-b07b-bf21359d96f8"
+      ],
+      "recall@k": 0.0,
+      "precision@k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "id": "Q11",
+      "type": "partial",
+      "gold_chunk_ids": [
+        "4eaf93c1-cac1-41b9-a1a9-4321f69f4c6c",
+        "d7fb48f4-c7ad-474a-bfb7-54cb0f5a9865"
+      ],
+      "retrieved_ids": [
+        "963f15a3-8bb3-46b0-a7a1-07890dabe6c1",
+        "3e990a55-a5db-4e25-ba29-a11ee28ccc73",
+        "c7a50be9-8d45-4391-ba5b-535df061c060",
+        "7523956e-dd59-4144-ae81-3dcabc053fbc",
+        "5a96976c-2e44-47ca-85b4-f583bfdaca70",
+        "da39973e-ba0a-49aa-8253-c8e760b0c3d2",
+        "4eaf93c1-cac1-41b9-a1a9-4321f69f4c6c",
+        "03c04711-7ddf-48fa-8afd-746a8275e747",
+        "19152090-29e8-46f0-9b62-f8f7ee32fbfb",
+        "016b43ed-3b56-4833-b40a-33b211ff8ec1"
+      ],
+      "recall@k": 0.5,
+      "precision@k": 0.1,
+      "mrr": 0.14285714285714285
+    },
+    {
+      "id": "Q12",
+      "type": "partial",
+      "gold_chunk_ids": [
+        "73a73e9f-5766-4550-940c-0d233f6bc683",
+        "a500e650-c2b6-4fcb-a87a-54449421d7ad"
+      ],
+      "retrieved_ids": [
+        "19152090-29e8-46f0-9b62-f8f7ee32fbfb",
+        "52d5a94e-ae3f-49f3-8800-42d2a31e1d21",
+        "8afc2b7c-9b67-411d-aa3e-621c108b382e",
+        "5a96976c-2e44-47ca-85b4-f583bfdaca70",
+        "c8ca5cc5-7bc1-46bb-bee1-3c9811da2482",
+        "bf04b6f7-dc62-4137-b6c9-9e07bbfc2f20",
+        "b8ce1dbf-744b-467e-9968-6cf7c64a245e",
+        "536600fd-60fd-474b-b514-16660d3f6bce",
+        "e9b2ce26-c1e6-407a-81c2-f1c32b84501d",
+        "db1d30db-0911-44b5-bda6-d7f2e265e5a4"
+      ],
+      "recall@k": 0.0,
+      "precision@k": 0.0,
+      "mrr": 0.0
+    }
+  ]
+}
