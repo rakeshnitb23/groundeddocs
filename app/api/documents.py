@@ -8,6 +8,7 @@ from app.core.database import get_db
 from app.schemas.answer import AnswerResponse, QuestionRequest
 from app.schemas.document import DocumentOut
 from app.services.answering import answer_question
+from app.services.bm25_retrieval import bm25_retrieve
 from app.services.chunking import create_chunks_for_document
 from app.services.ingestion import ingest_document
 from app.services.vector_store import embed_chunks_for_document, retrieve_similar_chunks
@@ -101,6 +102,19 @@ def retrieve(
         }
         for c in chunks
     ]
+
+
+@router.post("/retrieve/bm25")
+def retrieve_bm25(
+    body: QueryRequest,
+    db: Session = Depends(get_db),
+):
+    return bm25_retrieve(
+        db=db,
+        user_id=TEMP_USER_ID,
+        query=body.query,
+        k=body.top_k,
+    )
 
 
 @router.post("/ask", response_model=AnswerResponse)

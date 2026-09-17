@@ -10,3 +10,4 @@ python-multipart
 openai
 pymupdf
 requests
+bm25s
