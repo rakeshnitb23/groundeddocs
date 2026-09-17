@@ -1,0 +1,1530 @@
+{
+  "k": 10,
+  "tau": 0.8641,
+  "gold_verified": false,
+  "gold_note": "gold_chunk_ids in eval/questions_with_gold.json are explicitly marked as random, non-human-verified placeholders (same file used in eval/results/retrieval_baseline.json). Retrieval columns below are computed only to prove the scoring code is correct -- they are NOT a trustworthy retrieval-quality signal. Do not draw conclusions from them.",
+  "table": [
+    {
+      "row": "dense-only",
+      "retrieval": {
+        "recall@k": 0.083,
+        "precision@k": 0.017,
+        "mrr": 0.054,
+        "n_scored": 12
+      },
+      "e2e": {
+        "citation_support_rate": 1.0,
+        "abstention_precision": 0.8,
+        "abstention_recall": 0.8,
+        "false_answers": 1,
+        "false_refusals": 1,
+        "all_citations_within_retrieved_set": true
+      }
+    },
+    {
+      "row": "bm25-only",
+      "retrieval": {
+        "recall@k": 0.083,
+        "precision@k": 0.017,
+        "mrr": 0.024,
+        "n_scored": 12
+      },
+      "e2e": {
+        "citation_support_rate": 1.0,
+        "abstention_precision": 0.571,
+        "abstention_recall": 0.8,
+        "false_answers": 1,
+        "false_refusals": 3,
+        "all_citations_within_retrieved_set": true
+      }
+    },
+    {
+      "row": "hybrid (RRF)",
+      "retrieval": {
+        "recall@k": 0.083,
+        "precision@k": 0.017,
+        "mrr": 0.05,
+        "n_scored": 12
+      },
+      "e2e": {
+        "citation_support_rate": 1.0,
+        "abstention_precision": 0.8,
+        "abstention_recall": 0.8,
+        "false_answers": 1,
+        "false_refusals": 1,
+        "all_citations_within_retrieved_set": true
+      }
+    },
+    {
+      "row": "hybrid_rerank + tau + citations",
+      "retrieval": {
+        "recall@k": 0.042,
+        "precision@k": 0.008,
+        "mrr": 0.042,
+        "n_scored": 12
+      },
+      "e2e": {
+        "citation_support_rate": 1.0,
+        "abstention_precision": 0.625,
+        "abstention_recall": 1.0,
+        "false_answers": 0,
+        "false_refusals": 3,
+        "all_citations_within_retrieved_set": true
+      }
+    }
+  ],
+  "per_row_results": {
+    "dense-only": [
+      {
+        "id": "Q1",
+        "type": "answerable",
+        "question": "How many samples were included in this meta-analysis of mean-level personality change?",
+        "ranked_ids": [
+          "536600fd-60fd-474b-b514-16660d3f6bce",
+          "b1637070-d38a-4a7e-b831-3b8f123a4805",
+          "947466d1-283c-4ad7-aa4f-ca3997d48dd4",
+          "1edeb6ea-ae49-4538-9549-85ad5fdd0050",
+          "8afc2b7c-9b67-411d-aa3e-621c108b382e",
+          "fb66a9c0-a4d9-4514-ab99-e5a5a7e90d9c",
+          "bcc7a849-1fc9-4231-8b15-72b126eda082",
+          "0e16183f-fc65-49a4-bf97-e533e14579fa",
+          "c7a50be9-8d45-4391-ba5b-535df061c060",
+          "16b17b53-b30f-4e68-8787-b691d92bb3a2"
+        ],
+        "decision": "abstain",
+        "citations": [],
+        "abstain_reason": null
+      },
+      {
+        "id": "Q2",
+        "type": "answerable",
+        "question": "In which age period did people increase most in social dominance, conscientiousness, and emotional stability?",
+        "ranked_ids": [
+          "a48cb73a-9063-4d19-8e52-654faa11f767",
+          "642dd8aa-8134-4aa9-87f1-d60f82a31669",
+          "b694069e-d506-487d-9d31-cc83adcb36fa",
+          "66cea7de-9694-4a27-a2d8-268613733216",
+          "e24c7456-70d0-4160-a4cb-12b9d480176d",
+          "4eaf93c1-cac1-41b9-a1a9-4321f69f4c6c",
+          "f1314a6c-65c0-439a-a8fb-5fb9205f0f8b",
+          "65f8152d-5119-49be-badf-f8ccc1e84cd6",
+          "1e792a61-4383-402e-8b04-5186c35c5751",
+          "71240c8d-5adb-45ea-bc63-2433566508b9"
+        ],
+        "decision": "answer",
+        "citations": [
+          "a48cb73a-9063-4d19-8e52-654faa11f767",
+          "4eaf93c1-cac1-41b9-a1a9-4321f69f4c6c"
+        ],
+        "abstain_reason": null
+      },
+      {
+        "id": "Q3",
+        "type": "answerable",
+        "question": "How did the authors split extraversion, and how do those two facets differ?",
+        "ranked_ids": [
+          "941538b0-3601-480e-9b54-669651d85d0b",
+          "139dd749-132b-453a-b8ab-88ebf79bc4b3",
+          "1a86312d-0007-47af-a6a6-340bad32bcc5",
+          "754df137-c431-42b1-b524-4850b51974c5",
+          "f1314a6c-65c0-439a-a8fb-5fb9205f0f8b",
+          "56637db2-c478-412e-a99c-3ca656cf8acb",
+          "65f8152d-5119-49be-badf-f8ccc1e84cd6",
+          "5b6e7ce9-c97e-43dd-a09a-ae26253666f9",
+          "7990b4b7-f2ae-482c-9ec7-6a14687cad1d",
+          "3f97f46c-22ff-45d0-8d57-55407be82afe"
+        ],
+        "decision": "answer",
+        "citations": [
+          "56637db2-c478-412e-a99c-3ca656cf8acb",
+          "754df137-c431-42b1-b524-4850b51974c5",
+          "5b6e7ce9-c97e-43dd-a09a-ae26253666f9"
+        ],
+        "abstain_reason": null
+      },
+      {
+        "id": "Q4",
+        "type": "answerable",
+        "question": "Are rank-order consistency and mean-level change opposites?",
+        "ranked_ids": [
+          "f6323289-5182-4e7e-8552-dfb7204e1457",
+          "c4886ced-0f7f-40cb-a7b7-7910f91d5a01",
+          "ae925c5a-ead2-45a1-973c-5fe95c5cf0af",
+          "0c44f73d-83c2-462b-8563-9c12a65399b9",
+          "a70c6f83-f24b-4b02-a1ae-91c3e17fa4b5",
+          "da805ef6-708c-4b5c-9e06-419b6c188c68",
+          "ab857638-aed4-40f5-9e8b-e9e45326880f",
+          "3516f21f-277b-46ed-8938-d1a13f93ee0b",
+          "6a717181-7dcb-4da0-93b0-b0321167d584",
+          "2bd3e508-b44e-4fca-829a-26e1054c5a62"
+        ],
+        "decision": "answer",
+        "citations": [
+          "c4886ced-0f7f-40cb-a7b7-7910f91d5a01",
+          "a70c6f83-f24b-4b02-a1ae-91c3e17fa4b5"
+        ],
+        "abstain_reason": null
+      },
+      {
+        "id": "Q5",
+        "type": "answerable",
+        "question": "Did Costa and McCrae\u2019s claim that personality shows little meaningful change after age 30 hold in this meta-analysis?",
+        "ranked_ids": [
+          "528fa19d-328d-470e-a253-0e5fe21292e9",
+          "7523956e-dd59-4144-ae81-3dcabc053fbc",
+          "d63bf22a-fe1e-4869-abb2-f414aafe35f6",
+          "619b9891-dd14-4dcf-9631-95ac1317b183",
+          "f937bc8e-245c-406d-bad2-53a2a0405d52",
+          "5a96976c-2e44-47ca-85b4-f583bfdaca70",
+          "983dd0d7-6803-435e-9ff4-09fca9268170",
+          "8d4799c9-3207-4566-bb15-2e96f5f550f2",
+          "19152090-29e8-46f0-9b62-f8f7ee32fbfb",
+          "016b43ed-3b56-4833-b40a-33b211ff8ec1"
+        ],
+        "decision": "answer",
+        "citations": [
+          "f937bc8e-245c-406d-bad2-53a2a0405d52",
+          "5a96976c-2e44-47ca-85b4-f583bfdaca70"
+        ],
+        "abstain_reason": null
+      },
+      {
+        "id": "Q6",
+        "type": "answerable",
+        "question": "What happened to agreeableness across the life course in this study?",
+        "ranked_ids": [
+          "dfd2719b-e5b3-40d4-a0a6-2ade0876cb63",
+          "34ff7638-df37-4b81-9ca1-9e296b5cf3d1",
+          "4476d654-9dbb-4b4a-98f6-b851cb24f75d",
+          "aa6ea5ee-4eb3-4813-8246-46581dac63a2",
+          "b694069e-d506-487d-9d31-cc83adcb36fa",
+          "c7a50be9-8d45-4391-ba5b-535df061c060",
+          "345c3060-c4a6-4c2b-8faa-b0b09334d36a",
+          "361b24cc-3610-4bed-a30c-9620518783cf",
+          "22df9751-abef-4bd6-bc03-51ac2bec2c88",
+          "754df137-c431-42b1-b524-4850b51974c5"
+        ],
+        "decision": "answer",
+        "citations": [
+          "c7a50be9-8d45-4391-ba5b-535df061c060"
+        ],
+        "abstain_reason": null
+      },
+      {
+        "id": "Q7",
+        "type": "answerable",
+        "question": "Which four moderators of mean-level personality change did the authors test?",
+        "ranked_ids": [
+          "1edeb6ea-ae49-4538-9549-85ad5fdd0050",
+          "c7a50be9-8d45-4391-ba5b-535df061c060",
+          "3c95b886-7dc7-47b3-a610-bae085a70891",
+          "fc426c25-c021-419c-9820-dc5527775ae8",
+          "18b91692-d98f-4cdb-9d43-15c0218ba5b9",
+          "46a11511-e900-4a14-9313-d24c53ddbc33",
+          "947466d1-283c-4ad7-aa4f-ca3997d48dd4",
+          "0696ea8d-24e3-4621-9a82-520c699f6c3a",
+          "b1637070-d38a-4a7e-b831-3b8f123a4805",
+          "536600fd-60fd-474b-b514-16660d3f6bce"
+        ],
+        "decision": "answer",
+        "citations": [
+          "c7a50be9-8d45-4391-ba5b-535df061c060"
+        ],
+        "abstain_reason": null
+      },
+      {
+        "id": "Q8",
+        "type": "answerable",
+        "question": "Did gender and attrition have large effects on personality change in this meta-analysis?",
+        "ranked_ids": [
+          "7e3715a5-10c6-47f1-a585-726a4c875d79",
+          "0696ea8d-24e3-4621-9a82-520c699f6c3a",
+          "ae4e71fb-d5ca-41a5-b905-e689f83c812c",
+          "1edeb6ea-ae49-4538-9549-85ad5fdd0050",
+          "016b43ed-3b56-4833-b40a-33b211ff8ec1",
+          "8afc2b7c-9b67-411d-aa3e-621c108b382e",
+          "da39973e-ba0a-49aa-8253-c8e760b0c3d2",
+          "a24eb8e2-2c10-4adb-959c-9b9ff13a8cb0",
+          "19152090-29e8-46f0-9b62-f8f7ee32fbfb",
+          "5a96976c-2e44-47ca-85b4-f583bfdaca70"
+        ],
+        "decision": "answer",
+        "citations": [
+          "ae4e71fb-d5ca-41a5-b905-e689f83c812c",
+          "da39973e-ba0a-49aa-8253-c8e760b0c3d2"
+        ],
+        "abstain_reason": null
+      },
+      {
+        "id": "Q9",
+        "type": "partial",
+        "question": "Why do personality traits change the most in young adulthood according to this paper?",
+        "ranked_ids": [
+          "23551b49-e92e-48bc-b5b1-4df2203c9508",
+          "9a27f8e9-627d-4f34-98ac-a2bc11986c02",
+          "132d0edf-7bb3-44ff-b21b-842911c78207",
+          "d3e301f9-0022-4e40-b316-e8357d56a7cb",
+          "0b10e09c-6cd6-4fc1-9f27-b31c47691c6e",
+          "03a6befa-4e5e-4912-8039-bf05bcfdbf6a",
+          "d497de0a-403a-4499-9996-da99b8a4b6f0",
+          "1a86312d-0007-47af-a6a6-340bad32bcc5",
+          "f937bc8e-245c-406d-bad2-53a2a0405d52",
+          "eb3bade2-cea8-43ca-a062-9e0efa3b10c6"
+        ],
+        "decision": "answer",
+        "citations": [
+          "132d0edf-7bb3-44ff-b21b-842911c78207",
+          "d3e301f9-0022-4e40-b316-e8357d56a7cb"
+        ],
+        "abstain_reason": null
+      },
+      {
+        "id": "Q10",
+        "type": "partial",
+        "question": "How large is personality change over the entire life course according to this paper?",
+        "ranked_ids": [
+          "f13a2ac7-481d-4780-a2b3-c5533a5ffd0b",
+          "9a27f8e9-627d-4f34-98ac-a2bc11986c02",
+          "e8ef1b45-72c7-4474-96c2-dcf3d36a247e",
+          "d497de0a-403a-4499-9996-da99b8a4b6f0",
+          "536600fd-60fd-474b-b514-16660d3f6bce",
+          "8afc2b7c-9b67-411d-aa3e-621c108b382e",
+          "3052075f-b413-4742-a58e-cc9f39c726a6",
+          "d63bf22a-fe1e-4869-abb2-f414aafe35f6",
+          "754df137-c431-42b1-b524-4850b51974c5",
+          "6f91dfff-880f-40e9-b07b-bf21359d96f8"
+        ],
+        "decision": "answer",
+        "citations": [
+          "9a27f8e9-627d-4f34-98ac-a2bc11986c02"
+        ],
+        "abstain_reason": null
+      },
+      {
+        "id": "Q11",
+        "type": "partial",
+        "question": "Do younger cohorts show more personality change than older cohorts in this meta-analysis?",
+        "ranked_ids": [
+          "963f15a3-8bb3-46b0-a7a1-07890dabe6c1",
+          "3e990a55-a5db-4e25-ba29-a11ee28ccc73",
+          "c7a50be9-8d45-4391-ba5b-535df061c060",
+          "7523956e-dd59-4144-ae81-3dcabc053fbc",
+          "5a96976c-2e44-47ca-85b4-f583bfdaca70",
+          "da39973e-ba0a-49aa-8253-c8e760b0c3d2",
+          "4eaf93c1-cac1-41b9-a1a9-4321f69f4c6c",
+          "03c04711-7ddf-48fa-8afd-746a8275e747",
+          "19152090-29e8-46f0-9b62-f8f7ee32fbfb",
+          "016b43ed-3b56-4833-b40a-33b211ff8ec1"
+        ],
+        "decision": "abstain",
+        "citations": [],
+        "abstain_reason": null
+      },
+      {
+        "id": "Q12",
+        "type": "partial",
+        "question": "Does this study prove that psychotherapy can change personality traits?",
+        "ranked_ids": [
+          "19152090-29e8-46f0-9b62-f8f7ee32fbfb",
+          "52d5a94e-ae3f-49f3-8800-42d2a31e1d21",
+          "8afc2b7c-9b67-411d-aa3e-621c108b382e",
+          "5a96976c-2e44-47ca-85b4-f583bfdaca70",
+          "c8ca5cc5-7bc1-46bb-bee1-3c9811da2482",
+          "bf04b6f7-dc62-4137-b6c9-9e07bbfc2f20",
+          "b8ce1dbf-744b-467e-9968-6cf7c64a245e",
+          "536600fd-60fd-474b-b514-16660d3f6bce",
+          "e9b2ce26-c1e6-407a-81c2-f1c32b84501d",
+          "db1d30db-0911-44b5-bda6-d7f2e265e5a4"
+        ],
+        "decision": "abstain",
+        "citations": [],
+        "abstain_reason": null
+      },
+      {
+        "id": "Q13",
+        "type": "unanswerable",
+        "question": "What is the best 6-week therapy protocol to increase conscientiousness?",
+        "ranked_ids": [
+          "38609bde-0f4f-4492-867a-b422779f951d",
+          "a500e650-c2b6-4fcb-a87a-54449421d7ad",
+          "4eaf93c1-cac1-41b9-a1a9-4321f69f4c6c",
+          "642dd8aa-8134-4aa9-87f1-d60f82a31669",
+          "e24c7456-70d0-4160-a4cb-12b9d480176d",
+          "03aa5782-bf67-4927-a8b4-a58af9b34b96",
+          "db1d30db-0911-44b5-bda6-d7f2e265e5a4",
+          "aaf071ce-44b3-49ef-ab9a-c08da6b28352",
+          "947466d1-283c-4ad7-aa4f-ca3997d48dd4",
+          "fc426c25-c021-419c-9820-dc5527775ae8"
+        ],
+        "decision": "abstain",
+        "citations": [],
+        "abstain_reason": null
+      },
+      {
+        "id": "Q14",
+        "type": "unanswerable",
+        "question": "What was the mean NEO Conscientiousness score of the 2006 University of Illinois undergraduate sample?",
+        "ranked_ids": [
+          "dfd2719b-e5b3-40d4-a0a6-2ade0876cb63",
+          "aaf071ce-44b3-49ef-ab9a-c08da6b28352",
+          "38609bde-0f4f-4492-867a-b422779f951d",
+          "c0af996f-629c-4779-87f5-1dcfe4e5b450",
+          "1882c0a3-9377-469f-81c2-cdfcee71cb79",
+          "398bffe9-be68-4e38-8812-53e915cedc8e",
+          "642dd8aa-8134-4aa9-87f1-d60f82a31669",
+          "4dc3003c-e330-418f-a56c-8323a6acc46d",
+          "2556b458-2681-4a80-8c65-dba12842993e",
+          "d7fb48f4-c7ad-474a-bfb7-54cb0f5a9865"
+        ],
+        "decision": "abstain",
+        "citations": [],
+        "abstain_reason": null
+      },
+      {
+        "id": "Q15",
+        "type": "unanswerable",
+        "question": "How should GroundedDocs store chunk embeddings in pgvector?",
+        "ranked_ids": [
+          "f04c408b-6aa3-4449-9478-9819dd199153",
+          "60dbb111-d47c-4e47-917c-9406040100af",
+          "e01cc1c7-1a1d-493b-98b0-d33a8e09739b",
+          "8894842f-268c-476f-b0b8-020d3395ce6c",
+          "15e327f1-691a-4869-bc89-6e986c614250",
+          "4f114183-2afe-4172-b1cd-a417d6b9c0c0",
+          "88366fea-c74b-4596-8494-64fb97689747",
+          "345c3060-c4a6-4c2b-8faa-b0b09334d36a",
+          "e62e73f4-8f18-44f9-8559-96111db2c6b7",
+          "dfab4f8d-196c-49cb-92f4-f19ed50090f1"
+        ],
+        "decision": "abstain",
+        "citations": [],
+        "abstain_reason": null
+      },
+      {
+        "id": "Q16",
+        "type": "unanswerable",
+        "question": "What percentage of variance in personality change is explained by genetics in this meta-analysis?",
+        "ranked_ids": [
+          "739c4c6b-2c04-4b17-92c6-a9dac9a8dbea",
+          "c8ca5cc5-7bc1-46bb-bee1-3c9811da2482",
+          "3b0ae0d3-2795-4c03-b4fd-9af45fd5a10b",
+          "3f97f46c-22ff-45d0-8d57-55407be82afe",
+          "1edeb6ea-ae49-4538-9549-85ad5fdd0050",
+          "e38fa6f0-bd8f-4538-87c2-4d4e49b7137f",
+          "536600fd-60fd-474b-b514-16660d3f6bce",
+          "bcc7a849-1fc9-4231-8b15-72b126eda082",
+          "016b43ed-3b56-4833-b40a-33b211ff8ec1",
+          "42c7f0a8-8977-4aa1-9853-25dd02ba1cf4"
+        ],
+        "decision": "answer",
+        "citations": [
+          "739c4c6b-2c04-4b17-92c6-a9dac9a8dbea",
+          "e38fa6f0-bd8f-4538-87c2-4d4e49b7137f"
+        ],
+        "abstain_reason": null
+      },
+      {
+        "id": "Q17",
+        "type": "unanswerable",
+        "question": "Which specific CPI item showed the largest change for women aged 43\u201352 in Helson and Wink (1992)?",
+        "ranked_ids": [
+          "9ad536fd-8092-48ad-87a4-289516187a2e",
+          "db7e774f-57ce-41f4-8015-44e8dbe7b699",
+          "f5a59ccf-5567-4a46-b39a-0e5c6def63d0",
+          "f63d6dc8-eba0-43d6-9508-6ee7cbe8968f",
+          "4476d654-9dbb-4b4a-98f6-b851cb24f75d",
+          "aaf071ce-44b3-49ef-ab9a-c08da6b28352",
+          "5baabac5-61ff-408e-9c8a-96d0a0c0414b",
+          "b7b89db9-6c7c-448a-8b04-47edd7d13182",
+          "fb4af92a-d433-4c15-96e0-ddb12c87d80b",
+          "e8d95990-f804-4f8a-ad8d-df39a29f28de"
+        ],
+        "decision": "abstain",
+        "citations": [],
+        "abstain_reason": null
+      }
+    ],
+    "bm25-only": [
+      {
+        "id": "Q1",
+        "type": "answerable",
+        "question": "How many samples were included in this meta-analysis of mean-level personality change?",
+        "ranked_ids": [
+          "536600fd-60fd-474b-b514-16660d3f6bce",
+          "8afc2b7c-9b67-411d-aa3e-621c108b382e",
+          "b1637070-d38a-4a7e-b831-3b8f123a4805",
+          "8ed55e00-ee5f-4338-8614-e46f6b9d2a79",
+          "1a86312d-0007-47af-a6a6-340bad32bcc5",
+          "9c2a9c8a-d180-4832-8551-a796a80ea1c6",
+          "7e3715a5-10c6-47f1-a585-726a4c875d79",
+          "03c04711-7ddf-48fa-8afd-746a8275e747",
+          "34f2c3e7-fe88-4487-a1c8-3ec85fcce146",
+          "ac738613-1288-48f3-af41-9b044118d83d"
+        ],
+        "decision": "abstain",
+        "citations": [],
+        "abstain_reason": null
+      },
+      {
+        "id": "Q2",
+        "type": "answerable",
+        "question": "In which age period did people increase most in social dominance, conscientiousness, and emotional stability?",
+        "ranked_ids": [
+          "301c70d8-db92-4b40-824c-dff1a0416623",
+          "e24c7456-70d0-4160-a4cb-12b9d480176d",
+          "b1637070-d38a-4a7e-b831-3b8f123a4805",
+          "db1d30db-0911-44b5-bda6-d7f2e265e5a4",
+          "666c5b2c-45ef-42ad-afdb-5121a17e293b",
+          "642dd8aa-8134-4aa9-87f1-d60f82a31669",
+          "a91709c0-9f60-4448-8306-8fae6a305d0f",
+          "f8a8cd1b-e8e8-4084-a07d-3e657daa2548",
+          "c0af996f-629c-4779-87f5-1dcfe4e5b450",
+          "7ae1ee4b-2d66-41a4-ab7c-e3371c0e36f7"
+        ],
+        "decision": "answer",
+        "citations": [
+          "b1637070-d38a-4a7e-b831-3b8f123a4805"
+        ],
+        "abstain_reason": null
+      },
+      {
+        "id": "Q3",
+        "type": "answerable",
+        "question": "How did the authors split extraversion, and how do those two facets differ?",
+        "ranked_ids": [
+          "1a86312d-0007-47af-a6a6-340bad32bcc5",
+          "a3eaba42-9689-4e9d-aa36-7384397b4c68",
+          "536600fd-60fd-474b-b514-16660d3f6bce",
+          "f8a8cd1b-e8e8-4084-a07d-3e657daa2548",
+          "8afc2b7c-9b67-411d-aa3e-621c108b382e",
+          "c0379efb-803b-4cbb-8dc0-d02b7526e8d0",
+          "139dd749-132b-453a-b8ab-88ebf79bc4b3",
+          "e8ef1b45-72c7-4474-96c2-dcf3d36a247e",
+          "3e990a55-a5db-4e25-ba29-a11ee28ccc73",
+          "26f01f11-618f-425c-a356-2b6c585a149f"
+        ],
+        "decision": "abstain",
+        "citations": [],
+        "abstain_reason": null
+      },
+      {
+        "id": "Q4",
+        "type": "answerable",
+        "question": "Are rank-order consistency and mean-level change opposites?",
+        "ranked_ids": [
+          "c4886ced-0f7f-40cb-a7b7-7910f91d5a01",
+          "ae925c5a-ead2-45a1-973c-5fe95c5cf0af",
+          "3516f21f-277b-46ed-8938-d1a13f93ee0b",
+          "a70c6f83-f24b-4b02-a1ae-91c3e17fa4b5",
+          "98ad6b20-94b5-41d3-976d-78426f1b9223",
+          "0c44f73d-83c2-462b-8563-9c12a65399b9",
+          "2b763916-0c0b-43ef-a0c9-ef09a83fef18",
+          "ac738613-1288-48f3-af41-9b044118d83d",
+          "6a717181-7dcb-4da0-93b0-b0321167d584",
+          "f6323289-5182-4e7e-8552-dfb7204e1457"
+        ],
+        "decision": "answer",
+        "citations": [
+          "c4886ced-0f7f-40cb-a7b7-7910f91d5a01"
+        ],
+        "abstain_reason": null
+      },
+      {
+        "id": "Q5",
+        "type": "answerable",
+        "question": "Did Costa and McCrae\u2019s claim that personality shows little meaningful change after age 30 hold in this meta-analysis?",
+        "ranked_ids": [
+          "528fa19d-328d-470e-a253-0e5fe21292e9",
+          "c12101d2-78e7-421f-9a6a-2080da7bc05f",
+          "7523956e-dd59-4144-ae81-3dcabc053fbc",
+          "d63bf22a-fe1e-4869-abb2-f414aafe35f6",
+          "38609bde-0f4f-4492-867a-b422779f951d",
+          "f937bc8e-245c-406d-bad2-53a2a0405d52",
+          "a49900ce-12c5-407e-89ff-816a2964908c",
+          "7238da39-c5c9-4a9f-b0ca-c8be5ac5d8e8",
+          "57ee6235-8e4e-4871-a549-400b3c2a68f8",
+          "983dd0d7-6803-435e-9ff4-09fca9268170"
+        ],
+        "decision": "answer",
+        "citations": [
+          "f937bc8e-245c-406d-bad2-53a2a0405d52"
+        ],
+        "abstain_reason": null
+      },
+      {
+        "id": "Q6",
+        "type": "answerable",
+        "question": "What happened to agreeableness across the life course in this study?",
+        "ranked_ids": [
+          "6f91dfff-880f-40e9-b07b-bf21359d96f8",
+          "98ad6b20-94b5-41d3-976d-78426f1b9223",
+          "a91709c0-9f60-4448-8306-8fae6a305d0f",
+          "b694069e-d506-487d-9d31-cc83adcb36fa",
+          "b1637070-d38a-4a7e-b831-3b8f123a4805",
+          "da39973e-ba0a-49aa-8253-c8e760b0c3d2",
+          "3f3d4fbb-e8bc-41b8-8000-40155d408f5c",
+          "a48cb73a-9063-4d19-8e52-654faa11f767",
+          "dfd2719b-e5b3-40d4-a0a6-2ade0876cb63",
+          "e8ef1b45-72c7-4474-96c2-dcf3d36a247e"
+        ],
+        "decision": "abstain",
+        "citations": [],
+        "abstain_reason": null
+      },
+      {
+        "id": "Q7",
+        "type": "answerable",
+        "question": "Which four moderators of mean-level personality change did the authors test?",
+        "ranked_ids": [
+          "1edeb6ea-ae49-4538-9549-85ad5fdd0050",
+          "c7a50be9-8d45-4391-ba5b-535df061c060",
+          "09a2583a-10ff-42c0-a18c-817c275ad1cc",
+          "8894842f-268c-476f-b0b8-020d3395ce6c",
+          "46a11511-e900-4a14-9313-d24c53ddbc33",
+          "3c95b886-7dc7-47b3-a610-bae085a70891",
+          "0c44f73d-83c2-462b-8563-9c12a65399b9",
+          "8afc2b7c-9b67-411d-aa3e-621c108b382e",
+          "398bf836-eb00-49b0-b3c7-3361db044e95",
+          "aa6ea5ee-4eb3-4813-8246-46581dac63a2"
+        ],
+        "decision": "answer",
+        "citations": [
+          "c7a50be9-8d45-4391-ba5b-535df061c060"
+        ],
+        "abstain_reason": null
+      },
+      {
+        "id": "Q8",
+        "type": "answerable",
+        "question": "Did gender and attrition have large effects on personality change in this meta-analysis?",
+        "ranked_ids": [
+          "9aea5058-a741-448e-9ff6-575ee546efde",
+          "1a86312d-0007-47af-a6a6-340bad32bcc5",
+          "37fed71b-703c-4a2c-b1aa-ee97d6f6449d",
+          "3f97f46c-22ff-45d0-8d57-55407be82afe",
+          "da39973e-ba0a-49aa-8253-c8e760b0c3d2",
+          "7e3715a5-10c6-47f1-a585-726a4c875d79",
+          "ae4e71fb-d5ca-41a5-b905-e689f83c812c",
+          "e8ef1b45-72c7-4474-96c2-dcf3d36a247e",
+          "3ab93102-3953-46b2-97db-4fb1e3503141",
+          "57a448f2-e941-4a53-81fe-d27222c3aa7a"
+        ],
+        "decision": "answer",
+        "citations": [
+          "1a86312d-0007-47af-a6a6-340bad32bcc5",
+          "ae4e71fb-d5ca-41a5-b905-e689f83c812c",
+          "37fed71b-703c-4a2c-b1aa-ee97d6f6449d"
+        ],
+        "abstain_reason": null
+      },
+      {
+        "id": "Q9",
+        "type": "partial",
+        "question": "Why do personality traits change the most in young adulthood according to this paper?",
+        "ranked_ids": [
+          "eb3bade2-cea8-43ca-a062-9e0efa3b10c6",
+          "d3e301f9-0022-4e40-b316-e8357d56a7cb",
+          "8199d3dc-a11a-4612-a6c1-37c7bb7a1fb7",
+          "23551b49-e92e-48bc-b5b1-4df2203c9508",
+          "d01fa524-b353-43a0-995c-9342c6e3fa87",
+          "9a27f8e9-627d-4f34-98ac-a2bc11986c02",
+          "0e16183f-fc65-49a4-bf97-e533e14579fa",
+          "a49900ce-12c5-407e-89ff-816a2964908c",
+          "536600fd-60fd-474b-b514-16660d3f6bce",
+          "0b10e09c-6cd6-4fc1-9f27-b31c47691c6e"
+        ],
+        "decision": "answer",
+        "citations": [
+          "d3e301f9-0022-4e40-b316-e8357d56a7cb"
+        ],
+        "abstain_reason": null
+      },
+      {
+        "id": "Q10",
+        "type": "partial",
+        "question": "How large is personality change over the entire life course according to this paper?",
+        "ranked_ids": [
+          "6f91dfff-880f-40e9-b07b-bf21359d96f8",
+          "9a27f8e9-627d-4f34-98ac-a2bc11986c02",
+          "9d26802b-1f33-4854-a12a-6a4368c64cc7",
+          "a3eaba42-9689-4e9d-aa36-7384397b4c68",
+          "8afc2b7c-9b67-411d-aa3e-621c108b382e",
+          "98ad6b20-94b5-41d3-976d-78426f1b9223",
+          "016b43ed-3b56-4833-b40a-33b211ff8ec1",
+          "536600fd-60fd-474b-b514-16660d3f6bce",
+          "eb3bade2-cea8-43ca-a062-9e0efa3b10c6",
+          "27a4900b-73f3-46fe-968d-9ce5de41fc9c"
+        ],
+        "decision": "abstain",
+        "citations": [],
+        "abstain_reason": null
+      },
+      {
+        "id": "Q11",
+        "type": "partial",
+        "question": "Do younger cohorts show more personality change than older cohorts in this meta-analysis?",
+        "ranked_ids": [
+          "bac17de6-e103-4cfe-bf13-a25b40e9fb60",
+          "e24c7456-70d0-4160-a4cb-12b9d480176d",
+          "2e3d1205-0ab8-4d6b-a5a1-2ca34d7800ee",
+          "3e990a55-a5db-4e25-ba29-a11ee28ccc73",
+          "ac738613-1288-48f3-af41-9b044118d83d",
+          "1e792a61-4383-402e-8b04-5186c35c5751",
+          "1a86312d-0007-47af-a6a6-340bad32bcc5",
+          "66cea7de-9694-4a27-a2d8-268613733216",
+          "963f15a3-8bb3-46b0-a7a1-07890dabe6c1",
+          "a2e95c75-f108-4548-a009-a1bf7a1be6ff"
+        ],
+        "decision": "answer",
+        "citations": [
+          "1a86312d-0007-47af-a6a6-340bad32bcc5"
+        ],
+        "abstain_reason": null
+      },
+      {
+        "id": "Q12",
+        "type": "partial",
+        "question": "Does this study prove that psychotherapy can change personality traits?",
+        "ranked_ids": [
+          "fc5bbdb5-ed55-4179-a99c-ba22b6446f2b",
+          "2bd3e508-b44e-4fca-829a-26e1054c5a62",
+          "5a6c08dd-40c7-44af-ac81-6f1aae64c5c7",
+          "016b43ed-3b56-4833-b40a-33b211ff8ec1",
+          "0e16183f-fc65-49a4-bf97-e533e14579fa",
+          "8afc2b7c-9b67-411d-aa3e-621c108b382e",
+          "7523956e-dd59-4144-ae81-3dcabc053fbc",
+          "f6323289-5182-4e7e-8552-dfb7204e1457",
+          "da39973e-ba0a-49aa-8253-c8e760b0c3d2",
+          "da805ef6-708c-4b5c-9e06-419b6c188c68"
+        ],
+        "decision": "abstain",
+        "citations": [],
+        "abstain_reason": null
+      },
+      {
+        "id": "Q13",
+        "type": "unanswerable",
+        "question": "What is the best 6-week therapy protocol to increase conscientiousness?",
+        "ranked_ids": [
+          "3f3d4fbb-e8bc-41b8-8000-40155d408f5c",
+          "38609bde-0f4f-4492-867a-b422779f951d",
+          "da805ef6-708c-4b5c-9e06-419b6c188c68",
+          "9c15e1a0-c0c2-4d81-b2f0-5db0685c39d8",
+          "c0379efb-803b-4cbb-8dc0-d02b7526e8d0",
+          "a690a844-ac0f-4de8-b897-af496ea07f40",
+          "b694069e-d506-487d-9d31-cc83adcb36fa",
+          "b1637070-d38a-4a7e-b831-3b8f123a4805",
+          "7ae1ee4b-2d66-41a4-ab7c-e3371c0e36f7",
+          "f5a59ccf-5567-4a46-b39a-0e5c6def63d0"
+        ],
+        "decision": "abstain",
+        "citations": [],
+        "abstain_reason": null
+      },
+      {
+        "id": "Q14",
+        "type": "unanswerable",
+        "question": "What was the mean NEO Conscientiousness score of the 2006 University of Illinois undergraduate sample?",
+        "ranked_ids": [
+          "ff7f0428-6c04-45ba-8173-2e5e7cef3892",
+          "b1637070-d38a-4a7e-b831-3b8f123a4805",
+          "4f248dc2-1e84-443e-a471-87c0db7f2842",
+          "4dc3003c-e330-418f-a56c-8323a6acc46d",
+          "db9a65ad-2a9a-4389-b092-0b681d0dbba9",
+          "ebe3fec7-06df-45ae-97e5-8494ce89ad4b",
+          "240e59c8-eeb2-49e5-8728-6661f2e7eddc",
+          "0c44f73d-83c2-462b-8563-9c12a65399b9",
+          "3f3d4fbb-e8bc-41b8-8000-40155d408f5c",
+          "7875388a-85fc-4813-8155-dc6aa61e25e3"
+        ],
+        "decision": "abstain",
+        "citations": [],
+        "abstain_reason": null
+      },
+      {
+        "id": "Q15",
+        "type": "unanswerable",
+        "question": "How should GroundedDocs store chunk embeddings in pgvector?",
+        "ranked_ids": [
+          "a3eaba42-9689-4e9d-aa36-7384397b4c68",
+          "73d4d167-24a3-486c-a7c4-680d1c0d84d7",
+          "c0379efb-803b-4cbb-8dc0-d02b7526e8d0",
+          "d5dadc62-2a0f-44ab-8b7a-b52764714047",
+          "8afc2b7c-9b67-411d-aa3e-621c108b382e",
+          "ae4e71fb-d5ca-41a5-b905-e689f83c812c",
+          "f87be11f-ec08-49a4-9bc4-01fb89289890",
+          "0c2100bb-4e85-4680-bd14-d86d79df7b56",
+          "3b0ae0d3-2795-4c03-b4fd-9af45fd5a10b",
+          "7523956e-dd59-4144-ae81-3dcabc053fbc"
+        ],
+        "decision": "abstain",
+        "citations": [],
+        "abstain_reason": null
+      },
+      {
+        "id": "Q16",
+        "type": "unanswerable",
+        "question": "What percentage of variance in personality change is explained by genetics in this meta-analysis?",
+        "ranked_ids": [
+          "c1bbbe7c-2cfa-4a2a-b58e-380fc3f7abad",
+          "5a96976c-2e44-47ca-85b4-f583bfdaca70",
+          "3f97f46c-22ff-45d0-8d57-55407be82afe",
+          "3f3d4fbb-e8bc-41b8-8000-40155d408f5c",
+          "e38fa6f0-bd8f-4538-87c2-4d4e49b7137f",
+          "c8ca5cc5-7bc1-46bb-bee1-3c9811da2482",
+          "b1637070-d38a-4a7e-b831-3b8f123a4805",
+          "bcc7a849-1fc9-4231-8b15-72b126eda082",
+          "1a86312d-0007-47af-a6a6-340bad32bcc5",
+          "73a73e9f-5766-4550-940c-0d233f6bc683"
+        ],
+        "decision": "answer",
+        "citations": [
+          "e38fa6f0-bd8f-4538-87c2-4d4e49b7137f"
+        ],
+        "abstain_reason": null
+      },
+      {
+        "id": "Q17",
+        "type": "unanswerable",
+        "question": "Which specific CPI item showed the largest change for women aged 43\u201352 in Helson and Wink (1992)?",
+        "ranked_ids": [
+          "ba8ace2e-1869-4f57-8daf-35f33b57842f",
+          "42c775e8-4aab-4589-9286-f92e231e05c1",
+          "e7da6bce-19ef-44cc-9b84-53a4606969e1",
+          "000f7b10-944d-488e-a5fe-20181e7c1a84",
+          "58a832b1-0c5c-4352-8044-380686395d84",
+          "23cb1870-531b-4226-a43f-8fe4cb8a4e96",
+          "b8ce1dbf-744b-467e-9968-6cf7c64a245e",
+          "bf04b6f7-dc62-4137-b6c9-9e07bbfc2f20",
+          "9ad536fd-8092-48ad-87a4-289516187a2e",
+          "8d2c4609-9647-4369-8084-49ffa759ee0d"
+        ],
+        "decision": "abstain",
+        "citations": [],
+        "abstain_reason": null
+      }
+    ],
+    "hybrid (RRF)": [
+      {
+        "id": "Q1",
+        "type": "answerable",
+        "question": "How many samples were included in this meta-analysis of mean-level personality change?",
+        "ranked_ids": [
+          "536600fd-60fd-474b-b514-16660d3f6bce",
+          "b1637070-d38a-4a7e-b831-3b8f123a4805",
+          "8afc2b7c-9b67-411d-aa3e-621c108b382e",
+          "0e16183f-fc65-49a4-bf97-e533e14579fa",
+          "bcc7a849-1fc9-4231-8b15-72b126eda082",
+          "fb66a9c0-a4d9-4514-ab99-e5a5a7e90d9c",
+          "7e3715a5-10c6-47f1-a585-726a4c875d79",
+          "1edeb6ea-ae49-4538-9549-85ad5fdd0050",
+          "56637db2-c478-412e-a99c-3ca656cf8acb",
+          "8ed55e00-ee5f-4338-8614-e46f6b9d2a79"
+        ],
+        "decision": "abstain",
+        "citations": [],
+        "abstain_reason": null
+      },
+      {
+        "id": "Q2",
+        "type": "answerable",
+        "question": "In which age period did people increase most in social dominance, conscientiousness, and emotional stability?",
+        "ranked_ids": [
+          "e24c7456-70d0-4160-a4cb-12b9d480176d",
+          "642dd8aa-8134-4aa9-87f1-d60f82a31669",
+          "a48cb73a-9063-4d19-8e52-654faa11f767",
+          "65f8152d-5119-49be-badf-f8ccc1e84cd6",
+          "b694069e-d506-487d-9d31-cc83adcb36fa",
+          "a91709c0-9f60-4448-8306-8fae6a305d0f",
+          "1e792a61-4383-402e-8b04-5186c35c5751",
+          "66cea7de-9694-4a27-a2d8-268613733216",
+          "b1637070-d38a-4a7e-b831-3b8f123a4805",
+          "754df137-c431-42b1-b524-4850b51974c5"
+        ],
+        "decision": "answer",
+        "citations": [
+          "b1637070-d38a-4a7e-b831-3b8f123a4805"
+        ],
+        "abstain_reason": null
+      },
+      {
+        "id": "Q3",
+        "type": "answerable",
+        "question": "How did the authors split extraversion, and how do those two facets differ?",
+        "ranked_ids": [
+          "1a86312d-0007-47af-a6a6-340bad32bcc5",
+          "139dd749-132b-453a-b8ab-88ebf79bc4b3",
+          "754df137-c431-42b1-b524-4850b51974c5",
+          "3e990a55-a5db-4e25-ba29-a11ee28ccc73",
+          "56637db2-c478-412e-a99c-3ca656cf8acb",
+          "f1314a6c-65c0-439a-a8fb-5fb9205f0f8b",
+          "a6d650c7-6924-47ba-89f5-19584bc5a3c5",
+          "963f15a3-8bb3-46b0-a7a1-07890dabe6c1",
+          "5b6e7ce9-c97e-43dd-a09a-ae26253666f9",
+          "3f97f46c-22ff-45d0-8d57-55407be82afe"
+        ],
+        "decision": "answer",
+        "citations": [
+          "56637db2-c478-412e-a99c-3ca656cf8acb",
+          "754df137-c431-42b1-b524-4850b51974c5",
+          "5b6e7ce9-c97e-43dd-a09a-ae26253666f9"
+        ],
+        "abstain_reason": null
+      },
+      {
+        "id": "Q4",
+        "type": "answerable",
+        "question": "Are rank-order consistency and mean-level change opposites?",
+        "ranked_ids": [
+          "c4886ced-0f7f-40cb-a7b7-7910f91d5a01",
+          "ae925c5a-ead2-45a1-973c-5fe95c5cf0af",
+          "a70c6f83-f24b-4b02-a1ae-91c3e17fa4b5",
+          "0c44f73d-83c2-462b-8563-9c12a65399b9",
+          "f6323289-5182-4e7e-8552-dfb7204e1457",
+          "3516f21f-277b-46ed-8938-d1a13f93ee0b",
+          "98ad6b20-94b5-41d3-976d-78426f1b9223",
+          "6a717181-7dcb-4da0-93b0-b0321167d584",
+          "2b763916-0c0b-43ef-a0c9-ef09a83fef18",
+          "da805ef6-708c-4b5c-9e06-419b6c188c68"
+        ],
+        "decision": "answer",
+        "citations": [
+          "c4886ced-0f7f-40cb-a7b7-7910f91d5a01"
+        ],
+        "abstain_reason": null
+      },
+      {
+        "id": "Q5",
+        "type": "answerable",
+        "question": "Did Costa and McCrae\u2019s claim that personality shows little meaningful change after age 30 hold in this meta-analysis?",
+        "ranked_ids": [
+          "528fa19d-328d-470e-a253-0e5fe21292e9",
+          "7523956e-dd59-4144-ae81-3dcabc053fbc",
+          "d63bf22a-fe1e-4869-abb2-f414aafe35f6",
+          "f937bc8e-245c-406d-bad2-53a2a0405d52",
+          "619b9891-dd14-4dcf-9631-95ac1317b183",
+          "983dd0d7-6803-435e-9ff4-09fca9268170",
+          "8d4799c9-3207-4566-bb15-2e96f5f550f2",
+          "2f1cac5b-62ec-49dd-bd2d-b2dcc7fa4879",
+          "eb3bade2-cea8-43ca-a062-9e0efa3b10c6",
+          "19152090-29e8-46f0-9b62-f8f7ee32fbfb"
+        ],
+        "decision": "answer",
+        "citations": [
+          "f937bc8e-245c-406d-bad2-53a2a0405d52"
+        ],
+        "abstain_reason": null
+      },
+      {
+        "id": "Q6",
+        "type": "answerable",
+        "question": "What happened to agreeableness across the life course in this study?",
+        "ranked_ids": [
+          "b694069e-d506-487d-9d31-cc83adcb36fa",
+          "dfd2719b-e5b3-40d4-a0a6-2ade0876cb63",
+          "c7a50be9-8d45-4391-ba5b-535df061c060",
+          "345c3060-c4a6-4c2b-8faa-b0b09334d36a",
+          "a91709c0-9f60-4448-8306-8fae6a305d0f",
+          "da39973e-ba0a-49aa-8253-c8e760b0c3d2",
+          "b1637070-d38a-4a7e-b831-3b8f123a4805",
+          "37fed71b-703c-4a2c-b1aa-ee97d6f6449d",
+          "7990b4b7-f2ae-482c-9ec7-6a14687cad1d",
+          "941538b0-3601-480e-9b54-669651d85d0b"
+        ],
+        "decision": "answer",
+        "citations": [
+          "c7a50be9-8d45-4391-ba5b-535df061c060"
+        ],
+        "abstain_reason": null
+      },
+      {
+        "id": "Q7",
+        "type": "answerable",
+        "question": "Which four moderators of mean-level personality change did the authors test?",
+        "ranked_ids": [
+          "1edeb6ea-ae49-4538-9549-85ad5fdd0050",
+          "c7a50be9-8d45-4391-ba5b-535df061c060",
+          "3c95b886-7dc7-47b3-a610-bae085a70891",
+          "46a11511-e900-4a14-9313-d24c53ddbc33",
+          "09a2583a-10ff-42c0-a18c-817c275ad1cc",
+          "aa6ea5ee-4eb3-4813-8246-46581dac63a2",
+          "398bf836-eb00-49b0-b3c7-3361db044e95",
+          "18b91692-d98f-4cdb-9d43-15c0218ba5b9",
+          "947466d1-283c-4ad7-aa4f-ca3997d48dd4",
+          "9c15e1a0-c0c2-4d81-b2f0-5db0685c39d8"
+        ],
+        "decision": "answer",
+        "citations": [
+          "c7a50be9-8d45-4391-ba5b-535df061c060"
+        ],
+        "abstain_reason": null
+      },
+      {
+        "id": "Q8",
+        "type": "answerable",
+        "question": "Did gender and attrition have large effects on personality change in this meta-analysis?",
+        "ranked_ids": [
+          "7e3715a5-10c6-47f1-a585-726a4c875d79",
+          "ae4e71fb-d5ca-41a5-b905-e689f83c812c",
+          "da39973e-ba0a-49aa-8253-c8e760b0c3d2",
+          "37fed71b-703c-4a2c-b1aa-ee97d6f6449d",
+          "1a86312d-0007-47af-a6a6-340bad32bcc5",
+          "1edeb6ea-ae49-4538-9549-85ad5fdd0050",
+          "536600fd-60fd-474b-b514-16660d3f6bce",
+          "ab857638-aed4-40f5-9e8b-e9e45326880f",
+          "19152090-29e8-46f0-9b62-f8f7ee32fbfb",
+          "8afc2b7c-9b67-411d-aa3e-621c108b382e"
+        ],
+        "decision": "answer",
+        "citations": [
+          "1a86312d-0007-47af-a6a6-340bad32bcc5",
+          "37fed71b-703c-4a2c-b1aa-ee97d6f6449d",
+          "ae4e71fb-d5ca-41a5-b905-e689f83c812c"
+        ],
+        "abstain_reason": null
+      },
+      {
+        "id": "Q9",
+        "type": "partial",
+        "question": "Why do personality traits change the most in young adulthood according to this paper?",
+        "ranked_ids": [
+          "23551b49-e92e-48bc-b5b1-4df2203c9508",
+          "d3e301f9-0022-4e40-b316-e8357d56a7cb",
+          "9a27f8e9-627d-4f34-98ac-a2bc11986c02",
+          "eb3bade2-cea8-43ca-a062-9e0efa3b10c6",
+          "0b10e09c-6cd6-4fc1-9f27-b31c47691c6e",
+          "1a86312d-0007-47af-a6a6-340bad32bcc5",
+          "03a6befa-4e5e-4912-8039-bf05bcfdbf6a",
+          "f937bc8e-245c-406d-bad2-53a2a0405d52",
+          "cb5088c2-1abf-48b9-9d87-41ba21d1bb51",
+          "132d0edf-7bb3-44ff-b21b-842911c78207"
+        ],
+        "decision": "answer",
+        "citations": [
+          "132d0edf-7bb3-44ff-b21b-842911c78207"
+        ],
+        "abstain_reason": null
+      },
+      {
+        "id": "Q10",
+        "type": "partial",
+        "question": "How large is personality change over the entire life course according to this paper?",
+        "ranked_ids": [
+          "9a27f8e9-627d-4f34-98ac-a2bc11986c02",
+          "6f91dfff-880f-40e9-b07b-bf21359d96f8",
+          "8afc2b7c-9b67-411d-aa3e-621c108b382e",
+          "536600fd-60fd-474b-b514-16660d3f6bce",
+          "e8ef1b45-72c7-4474-96c2-dcf3d36a247e",
+          "d497de0a-403a-4499-9996-da99b8a4b6f0",
+          "f13a2ac7-481d-4780-a2b3-c5533a5ffd0b",
+          "d63bf22a-fe1e-4869-abb2-f414aafe35f6",
+          "eb3bade2-cea8-43ca-a062-9e0efa3b10c6",
+          "016b43ed-3b56-4833-b40a-33b211ff8ec1"
+        ],
+        "decision": "abstain",
+        "citations": [],
+        "abstain_reason": null
+      },
+      {
+        "id": "Q11",
+        "type": "partial",
+        "question": "Do younger cohorts show more personality change than older cohorts in this meta-analysis?",
+        "ranked_ids": [
+          "3e990a55-a5db-4e25-ba29-a11ee28ccc73",
+          "963f15a3-8bb3-46b0-a7a1-07890dabe6c1",
+          "e24c7456-70d0-4160-a4cb-12b9d480176d",
+          "da39973e-ba0a-49aa-8253-c8e760b0c3d2",
+          "bac17de6-e103-4cfe-bf13-a25b40e9fb60",
+          "1a86312d-0007-47af-a6a6-340bad32bcc5",
+          "66cea7de-9694-4a27-a2d8-268613733216",
+          "536600fd-60fd-474b-b514-16660d3f6bce",
+          "2e3d1205-0ab8-4d6b-a5a1-2ca34d7800ee",
+          "4eaf93c1-cac1-41b9-a1a9-4321f69f4c6c"
+        ],
+        "decision": "answer",
+        "citations": [
+          "1a86312d-0007-47af-a6a6-340bad32bcc5"
+        ],
+        "abstain_reason": null
+      },
+      {
+        "id": "Q12",
+        "type": "partial",
+        "question": "Does this study prove that psychotherapy can change personality traits?",
+        "ranked_ids": [
+          "8afc2b7c-9b67-411d-aa3e-621c108b382e",
+          "19152090-29e8-46f0-9b62-f8f7ee32fbfb",
+          "016b43ed-3b56-4833-b40a-33b211ff8ec1",
+          "5a6c08dd-40c7-44af-ac81-6f1aae64c5c7",
+          "e9b2ce26-c1e6-407a-81c2-f1c32b84501d",
+          "4eaf93c1-cac1-41b9-a1a9-4321f69f4c6c",
+          "49d1dc3e-5d76-48af-bf8b-a5c3634d9ae5",
+          "b8ce1dbf-744b-467e-9968-6cf7c64a245e",
+          "536600fd-60fd-474b-b514-16660d3f6bce",
+          "23551b49-e92e-48bc-b5b1-4df2203c9508"
+        ],
+        "decision": "abstain",
+        "citations": [],
+        "abstain_reason": null
+      },
+      {
+        "id": "Q13",
+        "type": "unanswerable",
+        "question": "What is the best 6-week therapy protocol to increase conscientiousness?",
+        "ranked_ids": [
+          "38609bde-0f4f-4492-867a-b422779f951d",
+          "a500e650-c2b6-4fcb-a87a-54449421d7ad",
+          "da805ef6-708c-4b5c-9e06-419b6c188c68",
+          "f88f7888-b0a9-4da9-b008-3119edb03583",
+          "e24c7456-70d0-4160-a4cb-12b9d480176d",
+          "db1d30db-0911-44b5-bda6-d7f2e265e5a4",
+          "642dd8aa-8134-4aa9-87f1-d60f82a31669",
+          "b1637070-d38a-4a7e-b831-3b8f123a4805",
+          "4eaf93c1-cac1-41b9-a1a9-4321f69f4c6c",
+          "03aa5782-bf67-4927-a8b4-a58af9b34b96"
+        ],
+        "decision": "abstain",
+        "citations": [],
+        "abstain_reason": null
+      },
+      {
+        "id": "Q14",
+        "type": "unanswerable",
+        "question": "What was the mean NEO Conscientiousness score of the 2006 University of Illinois undergraduate sample?",
+        "ranked_ids": [
+          "4dc3003c-e330-418f-a56c-8323a6acc46d",
+          "38609bde-0f4f-4492-867a-b422779f951d",
+          "1882c0a3-9377-469f-81c2-cdfcee71cb79",
+          "da805ef6-708c-4b5c-9e06-419b6c188c68",
+          "dfd2719b-e5b3-40d4-a0a6-2ade0876cb63",
+          "947466d1-283c-4ad7-aa4f-ca3997d48dd4",
+          "b1637070-d38a-4a7e-b831-3b8f123a4805",
+          "7238da39-c5c9-4a9f-b0ca-c8be5ac5d8e8",
+          "aaf071ce-44b3-49ef-ab9a-c08da6b28352",
+          "7990b4b7-f2ae-482c-9ec7-6a14687cad1d"
+        ],
+        "decision": "abstain",
+        "citations": [],
+        "abstain_reason": null
+      },
+      {
+        "id": "Q15",
+        "type": "unanswerable",
+        "question": "How should GroundedDocs store chunk embeddings in pgvector?",
+        "ranked_ids": [
+          "60dbb111-d47c-4e47-917c-9406040100af",
+          "4f114183-2afe-4172-b1cd-a417d6b9c0c0",
+          "a749507b-1929-4339-b09d-566dd898b8df",
+          "46a11511-e900-4a14-9313-d24c53ddbc33",
+          "3b0ae0d3-2795-4c03-b4fd-9af45fd5a10b",
+          "46cbcd19-8360-4264-97c5-df5412fe8815",
+          "ff7f0428-6c04-45ba-8173-2e5e7cef3892",
+          "42c7f0a8-8977-4aa1-9853-25dd02ba1cf4",
+          "398bf836-eb00-49b0-b3c7-3361db044e95",
+          "416e65e0-5aeb-485b-b2cd-2399591e1a14"
+        ],
+        "decision": "abstain",
+        "citations": [],
+        "abstain_reason": null
+      },
+      {
+        "id": "Q16",
+        "type": "unanswerable",
+        "question": "What percentage of variance in personality change is explained by genetics in this meta-analysis?",
+        "ranked_ids": [
+          "3f97f46c-22ff-45d0-8d57-55407be82afe",
+          "c8ca5cc5-7bc1-46bb-bee1-3c9811da2482",
+          "e38fa6f0-bd8f-4538-87c2-4d4e49b7137f",
+          "5a96976c-2e44-47ca-85b4-f583bfdaca70",
+          "bcc7a849-1fc9-4231-8b15-72b126eda082",
+          "536600fd-60fd-474b-b514-16660d3f6bce",
+          "b1637070-d38a-4a7e-b831-3b8f123a4805",
+          "42c7f0a8-8977-4aa1-9853-25dd02ba1cf4",
+          "7523956e-dd59-4144-ae81-3dcabc053fbc",
+          "1edeb6ea-ae49-4538-9549-85ad5fdd0050"
+        ],
+        "decision": "answer",
+        "citations": [
+          "e38fa6f0-bd8f-4538-87c2-4d4e49b7137f"
+        ],
+        "abstain_reason": null
+      },
+      {
+        "id": "Q17",
+        "type": "unanswerable",
+        "question": "Which specific CPI item showed the largest change for women aged 43\u201352 in Helson and Wink (1992)?",
+        "ranked_ids": [
+          "9ad536fd-8092-48ad-87a4-289516187a2e",
+          "b8ce1dbf-744b-467e-9968-6cf7c64a245e",
+          "fb4af92a-d433-4c15-96e0-ddb12c87d80b",
+          "b4aa8e9a-7e5b-4f74-87ad-693954e87624",
+          "8894842f-268c-476f-b0b8-020d3395ce6c",
+          "f87be11f-ec08-49a4-9bc4-01fb89289890",
+          "23cb1870-531b-4226-a43f-8fe4cb8a4e96",
+          "23981e0b-9b0a-4438-8858-a8631ef227ef",
+          "e8d95990-f804-4f8a-ad8d-df39a29f28de",
+          "aaf071ce-44b3-49ef-ab9a-c08da6b28352"
+        ],
+        "decision": "abstain",
+        "citations": [],
+        "abstain_reason": null
+      }
+    ],
+    "hybrid_rerank + tau + citations": [
+      {
+        "id": "Q1",
+        "type": "answerable",
+        "question": "How many samples were included in this meta-analysis of mean-level personality change?",
+        "ranked_ids": [
+          "b1637070-d38a-4a7e-b831-3b8f123a4805",
+          "bcc7a849-1fc9-4231-8b15-72b126eda082",
+          "03c04711-7ddf-48fa-8afd-746a8275e747",
+          "f63d6dc8-eba0-43d6-9508-6ee7cbe8968f",
+          "1edeb6ea-ae49-4538-9549-85ad5fdd0050",
+          "536600fd-60fd-474b-b514-16660d3f6bce",
+          "1a86312d-0007-47af-a6a6-340bad32bcc5",
+          "42c775e8-4aab-4589-9286-f92e231e05c1",
+          "0e16183f-fc65-49a4-bf97-e533e14579fa",
+          "941538b0-3601-480e-9b54-669651d85d0b"
+        ],
+        "decision": "abstain",
+        "citations": [],
+        "abstain_reason": "Model could not produce a fully cited answer from the retrieved chunks."
+      },
+      {
+        "id": "Q2",
+        "type": "answerable",
+        "question": "In which age period did people increase most in social dominance, conscientiousness, and emotional stability?",
+        "ranked_ids": [
+          "b1637070-d38a-4a7e-b831-3b8f123a4805",
+          "642dd8aa-8134-4aa9-87f1-d60f82a31669",
+          "b694069e-d506-487d-9d31-cc83adcb36fa",
+          "03aa5782-bf67-4927-a8b4-a58af9b34b96",
+          "0696ea8d-24e3-4621-9a82-520c699f6c3a",
+          "e24c7456-70d0-4160-a4cb-12b9d480176d",
+          "27d1af16-dd78-4251-ba9f-2101d6288651",
+          "4eaf93c1-cac1-41b9-a1a9-4321f69f4c6c",
+          "38609bde-0f4f-4492-867a-b422779f951d",
+          "1a86312d-0007-47af-a6a6-340bad32bcc5"
+        ],
+        "decision": "answer",
+        "citations": [
+          "b1637070-d38a-4a7e-b831-3b8f123a4805",
+          "0696ea8d-24e3-4621-9a82-520c699f6c3a"
+        ],
+        "abstain_reason": null
+      },
+      {
+        "id": "Q3",
+        "type": "answerable",
+        "question": "How did the authors split extraversion, and how do those two facets differ?",
+        "ranked_ids": [
+          "139dd749-132b-453a-b8ab-88ebf79bc4b3",
+          "1a86312d-0007-47af-a6a6-340bad32bcc5",
+          "754df137-c431-42b1-b524-4850b51974c5",
+          "f1314a6c-65c0-439a-a8fb-5fb9205f0f8b",
+          "b1637070-d38a-4a7e-b831-3b8f123a4805",
+          "941538b0-3601-480e-9b54-669651d85d0b",
+          "56637db2-c478-412e-a99c-3ca656cf8acb",
+          "5b6e7ce9-c97e-43dd-a09a-ae26253666f9",
+          "a6d650c7-6924-47ba-89f5-19584bc5a3c5",
+          "ac738613-1288-48f3-af41-9b044118d83d"
+        ],
+        "decision": "abstain",
+        "citations": [],
+        "abstain_reason": "Top rerank score 0.4691 is below tau=0.8641."
+      },
+      {
+        "id": "Q4",
+        "type": "answerable",
+        "question": "Are rank-order consistency and mean-level change opposites?",
+        "ranked_ids": [
+          "ae925c5a-ead2-45a1-973c-5fe95c5cf0af",
+          "4671d74b-ce38-4ef4-87fd-57a82992cce2",
+          "6a717181-7dcb-4da0-93b0-b0321167d584",
+          "f6323289-5182-4e7e-8552-dfb7204e1457",
+          "0c44f73d-83c2-462b-8563-9c12a65399b9",
+          "3516f21f-277b-46ed-8938-d1a13f93ee0b",
+          "da805ef6-708c-4b5c-9e06-419b6c188c68",
+          "0b10e09c-6cd6-4fc1-9f27-b31c47691c6e",
+          "5bf3ddca-e40f-4c95-aec6-b4bee7a292b7",
+          "a70c6f83-f24b-4b02-a1ae-91c3e17fa4b5"
+        ],
+        "decision": "answer",
+        "citations": [
+          "a70c6f83-f24b-4b02-a1ae-91c3e17fa4b5"
+        ],
+        "abstain_reason": null
+      },
+      {
+        "id": "Q5",
+        "type": "answerable",
+        "question": "Did Costa and McCrae\u2019s claim that personality shows little meaningful change after age 30 hold in this meta-analysis?",
+        "ranked_ids": [
+          "d63bf22a-fe1e-4869-abb2-f414aafe35f6",
+          "528fa19d-328d-470e-a253-0e5fe21292e9",
+          "7523956e-dd59-4144-ae81-3dcabc053fbc",
+          "7990b4b7-f2ae-482c-9ec7-6a14687cad1d",
+          "f937bc8e-245c-406d-bad2-53a2a0405d52",
+          "c12101d2-78e7-421f-9a6a-2080da7bc05f",
+          "16b17b53-b30f-4e68-8787-b691d92bb3a2",
+          "1add15e1-4abf-4da3-ba99-d893a7500311",
+          "d01fa524-b353-43a0-995c-9342c6e3fa87",
+          "619b9891-dd14-4dcf-9631-95ac1317b183"
+        ],
+        "decision": "answer",
+        "citations": [
+          "f937bc8e-245c-406d-bad2-53a2a0405d52",
+          "1add15e1-4abf-4da3-ba99-d893a7500311"
+        ],
+        "abstain_reason": null
+      },
+      {
+        "id": "Q6",
+        "type": "answerable",
+        "question": "What happened to agreeableness across the life course in this study?",
+        "ranked_ids": [
+          "b694069e-d506-487d-9d31-cc83adcb36fa",
+          "c7a50be9-8d45-4391-ba5b-535df061c060",
+          "b1637070-d38a-4a7e-b831-3b8f123a4805",
+          "dfd2719b-e5b3-40d4-a0a6-2ade0876cb63",
+          "0696ea8d-24e3-4621-9a82-520c699f6c3a",
+          "f88f7888-b0a9-4da9-b008-3119edb03583",
+          "da39973e-ba0a-49aa-8253-c8e760b0c3d2",
+          "61adba8a-5d53-48d6-9adb-ef80ad9ce2ed",
+          "aaf071ce-44b3-49ef-ab9a-c08da6b28352",
+          "a91709c0-9f60-4448-8306-8fae6a305d0f"
+        ],
+        "decision": "abstain",
+        "citations": [],
+        "abstain_reason": "Top rerank score 0.6788 is below tau=0.8641."
+      },
+      {
+        "id": "Q7",
+        "type": "answerable",
+        "question": "Which four moderators of mean-level personality change did the authors test?",
+        "ranked_ids": [
+          "c7a50be9-8d45-4391-ba5b-535df061c060",
+          "1edeb6ea-ae49-4538-9549-85ad5fdd0050",
+          "46a11511-e900-4a14-9313-d24c53ddbc33",
+          "8afc2b7c-9b67-411d-aa3e-621c108b382e",
+          "3c95b886-7dc7-47b3-a610-bae085a70891",
+          "9c15e1a0-c0c2-4d81-b2f0-5db0685c39d8",
+          "fb66a9c0-a4d9-4514-ab99-e5a5a7e90d9c",
+          "e8c1d3dd-5c82-4f35-b903-24b9960d3e04",
+          "bcc7a849-1fc9-4231-8b15-72b126eda082",
+          "536600fd-60fd-474b-b514-16660d3f6bce"
+        ],
+        "decision": "answer",
+        "citations": [
+          "c7a50be9-8d45-4391-ba5b-535df061c060"
+        ],
+        "abstain_reason": null
+      },
+      {
+        "id": "Q8",
+        "type": "answerable",
+        "question": "Did gender and attrition have large effects on personality change in this meta-analysis?",
+        "ranked_ids": [
+          "1a86312d-0007-47af-a6a6-340bad32bcc5",
+          "da39973e-ba0a-49aa-8253-c8e760b0c3d2",
+          "7e3715a5-10c6-47f1-a585-726a4c875d79",
+          "1edeb6ea-ae49-4538-9549-85ad5fdd0050",
+          "0696ea8d-24e3-4621-9a82-520c699f6c3a",
+          "a24eb8e2-2c10-4adb-959c-9b9ff13a8cb0",
+          "e24c7456-70d0-4160-a4cb-12b9d480176d",
+          "ab857638-aed4-40f5-9e8b-e9e45326880f",
+          "0e16183f-fc65-49a4-bf97-e533e14579fa",
+          "c7a50be9-8d45-4391-ba5b-535df061c060"
+        ],
+        "decision": "answer",
+        "citations": [
+          "1a86312d-0007-47af-a6a6-340bad32bcc5"
+        ],
+        "abstain_reason": null
+      },
+      {
+        "id": "Q9",
+        "type": "partial",
+        "question": "Why do personality traits change the most in young adulthood according to this paper?",
+        "ranked_ids": [
+          "cb5088c2-1abf-48b9-9d87-41ba21d1bb51",
+          "d3e301f9-0022-4e40-b316-e8357d56a7cb",
+          "9a27f8e9-627d-4f34-98ac-a2bc11986c02",
+          "e7da6bce-19ef-44cc-9b84-53a4606969e1",
+          "739c4c6b-2c04-4b17-92c6-a9dac9a8dbea",
+          "03a6befa-4e5e-4912-8039-bf05bcfdbf6a",
+          "f937bc8e-245c-406d-bad2-53a2a0405d52",
+          "bf04b6f7-dc62-4137-b6c9-9e07bbfc2f20",
+          "8199d3dc-a11a-4612-a6c1-37c7bb7a1fb7",
+          "b1637070-d38a-4a7e-b831-3b8f123a4805"
+        ],
+        "decision": "abstain",
+        "citations": [],
+        "abstain_reason": "Model could not produce a fully cited answer from the retrieved chunks."
+      },
+      {
+        "id": "Q10",
+        "type": "partial",
+        "question": "How large is personality change over the entire life course according to this paper?",
+        "ranked_ids": [
+          "6735df95-e536-4491-82a1-633b96ddfbeb",
+          "6f91dfff-880f-40e9-b07b-bf21359d96f8",
+          "9a27f8e9-627d-4f34-98ac-a2bc11986c02",
+          "b1637070-d38a-4a7e-b831-3b8f123a4805",
+          "fb66a9c0-a4d9-4514-ab99-e5a5a7e90d9c",
+          "536600fd-60fd-474b-b514-16660d3f6bce",
+          "b694069e-d506-487d-9d31-cc83adcb36fa",
+          "d63bf22a-fe1e-4869-abb2-f414aafe35f6",
+          "73d4d167-24a3-486c-a7c4-680d1c0d84d7",
+          "9d26802b-1f33-4854-a12a-6a4368c64cc7"
+        ],
+        "decision": "abstain",
+        "citations": [],
+        "abstain_reason": "Top rerank score 0.7596 is below tau=0.8641."
+      },
+      {
+        "id": "Q11",
+        "type": "partial",
+        "question": "Do younger cohorts show more personality change than older cohorts in this meta-analysis?",
+        "ranked_ids": [
+          "e24c7456-70d0-4160-a4cb-12b9d480176d",
+          "1a86312d-0007-47af-a6a6-340bad32bcc5",
+          "963f15a3-8bb3-46b0-a7a1-07890dabe6c1",
+          "1e792a61-4383-402e-8b04-5186c35c5751",
+          "ac738613-1288-48f3-af41-9b044118d83d",
+          "e8d95990-f804-4f8a-ad8d-df39a29f28de",
+          "da39973e-ba0a-49aa-8253-c8e760b0c3d2",
+          "bac17de6-e103-4cfe-bf13-a25b40e9fb60",
+          "739c4c6b-2c04-4b17-92c6-a9dac9a8dbea",
+          "3e990a55-a5db-4e25-ba29-a11ee28ccc73"
+        ],
+        "decision": "answer",
+        "citations": [
+          "1a86312d-0007-47af-a6a6-340bad32bcc5"
+        ],
+        "abstain_reason": null
+      },
+      {
+        "id": "Q12",
+        "type": "partial",
+        "question": "Does this study prove that psychotherapy can change personality traits?",
+        "ranked_ids": [
+          "f937bc8e-245c-406d-bad2-53a2a0405d52",
+          "52d5a94e-ae3f-49f3-8800-42d2a31e1d21",
+          "0e16183f-fc65-49a4-bf97-e533e14579fa",
+          "fb66a9c0-a4d9-4514-ab99-e5a5a7e90d9c",
+          "0696ea8d-24e3-4621-9a82-520c699f6c3a",
+          "27a4900b-73f3-46fe-968d-9ce5de41fc9c",
+          "b1637070-d38a-4a7e-b831-3b8f123a4805",
+          "536600fd-60fd-474b-b514-16660d3f6bce",
+          "16b17b53-b30f-4e68-8787-b691d92bb3a2",
+          "26f01f11-618f-425c-a356-2b6c585a149f"
+        ],
+        "decision": "abstain",
+        "citations": [],
+        "abstain_reason": "Top rerank score 0.2353 is below tau=0.8641."
+      },
+      {
+        "id": "Q13",
+        "type": "unanswerable",
+        "question": "What is the best 6-week therapy protocol to increase conscientiousness?",
+        "ranked_ids": [
+          "642dd8aa-8134-4aa9-87f1-d60f82a31669",
+          "db1d30db-0911-44b5-bda6-d7f2e265e5a4",
+          "b1637070-d38a-4a7e-b831-3b8f123a4805",
+          "03aa5782-bf67-4927-a8b4-a58af9b34b96",
+          "b694069e-d506-487d-9d31-cc83adcb36fa",
+          "666c5b2c-45ef-42ad-afdb-5121a17e293b",
+          "aaf071ce-44b3-49ef-ab9a-c08da6b28352",
+          "38609bde-0f4f-4492-867a-b422779f951d",
+          "6db504f8-87ce-455a-8321-a7d8dbcff52b",
+          "bac17de6-e103-4cfe-bf13-a25b40e9fb60"
+        ],
+        "decision": "abstain",
+        "citations": [],
+        "abstain_reason": "Top rerank score 0.0226 is below tau=0.8641."
+      },
+      {
+        "id": "Q14",
+        "type": "unanswerable",
+        "question": "What was the mean NEO Conscientiousness score of the 2006 University of Illinois undergraduate sample?",
+        "ranked_ids": [
+          "34f2c3e7-fe88-4487-a1c8-3ec85fcce146",
+          "a91709c0-9f60-4448-8306-8fae6a305d0f",
+          "642dd8aa-8134-4aa9-87f1-d60f82a31669",
+          "6a318ce0-69c5-4742-9b3e-558cd4bffd66",
+          "4dc3003c-e330-418f-a56c-8323a6acc46d",
+          "da805ef6-708c-4b5c-9e06-419b6c188c68",
+          "754df137-c431-42b1-b524-4850b51974c5",
+          "7990b4b7-f2ae-482c-9ec7-6a14687cad1d",
+          "ff7f0428-6c04-45ba-8173-2e5e7cef3892",
+          "b1637070-d38a-4a7e-b831-3b8f123a4805"
+        ],
+        "decision": "abstain",
+        "citations": [],
+        "abstain_reason": "Top rerank score 0.0503 is below tau=0.8641."
+      },
+      {
+        "id": "Q15",
+        "type": "unanswerable",
+        "question": "How should GroundedDocs store chunk embeddings in pgvector?",
+        "ranked_ids": [
+          "2fca43b0-9e3a-4bf9-9d8a-329ac9aeff55",
+          "8afc2b7c-9b67-411d-aa3e-621c108b382e",
+          "a3eaba42-9689-4e9d-aa36-7384397b4c68",
+          "3c95b886-7dc7-47b3-a610-bae085a70891",
+          "1a86312d-0007-47af-a6a6-340bad32bcc5",
+          "0c2100bb-4e85-4680-bd14-d86d79df7b56",
+          "18b91692-d98f-4cdb-9d43-15c0218ba5b9",
+          "301c70d8-db92-4b40-824c-dff1a0416623",
+          "f87be11f-ec08-49a4-9bc4-01fb89289890",
+          "46e91a71-6094-45b1-92d7-cd450ee76b4e"
+        ],
+        "decision": "abstain",
+        "citations": [],
+        "abstain_reason": "Top rerank score 0.0000 is below tau=0.8641."
+      },
+      {
+        "id": "Q16",
+        "type": "unanswerable",
+        "question": "What percentage of variance in personality change is explained by genetics in this meta-analysis?",
+        "ranked_ids": [
+          "bcc7a849-1fc9-4231-8b15-72b126eda082",
+          "e38fa6f0-bd8f-4538-87c2-4d4e49b7137f",
+          "739c4c6b-2c04-4b17-92c6-a9dac9a8dbea",
+          "03aa5782-bf67-4927-a8b4-a58af9b34b96",
+          "0e16183f-fc65-49a4-bf97-e533e14579fa",
+          "4eaf93c1-cac1-41b9-a1a9-4321f69f4c6c",
+          "b1637070-d38a-4a7e-b831-3b8f123a4805",
+          "4671d74b-ce38-4ef4-87fd-57a82992cce2",
+          "1a86312d-0007-47af-a6a6-340bad32bcc5",
+          "e8d95990-f804-4f8a-ad8d-df39a29f28de"
+        ],
+        "decision": "abstain",
+        "citations": [],
+        "abstain_reason": "Top rerank score 0.7523 is below tau=0.8641."
+      },
+      {
+        "id": "Q17",
+        "type": "unanswerable",
+        "question": "Which specific CPI item showed the largest change for women aged 43\u201352 in Helson and Wink (1992)?",
+        "ranked_ids": [
+          "ba8ace2e-1869-4f57-8daf-35f33b57842f",
+          "b8ce1dbf-744b-467e-9968-6cf7c64a245e",
+          "e7da6bce-19ef-44cc-9b84-53a4606969e1",
+          "fb4af92a-d433-4c15-96e0-ddb12c87d80b",
+          "42c775e8-4aab-4589-9286-f92e231e05c1",
+          "536600fd-60fd-474b-b514-16660d3f6bce",
+          "8d2c4609-9647-4369-8084-49ffa759ee0d",
+          "000f7b10-944d-488e-a5fe-20181e7c1a84",
+          "8894842f-268c-476f-b0b8-020d3395ce6c",
+          "23cb1870-531b-4226-a43f-8fe4cb8a4e96"
+        ],
+        "decision": "abstain",
+        "citations": [],
+        "abstain_reason": "Top rerank score 0.6115 is below tau=0.8641."
+      }
+    ]
+  }
+}
