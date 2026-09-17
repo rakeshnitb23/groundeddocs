@@ -1,0 +1,250 @@
+{
+  "rows": [
+    {
+      "question_id": "Q1",
+      "label": "answerable",
+      "top_chunk_id": "b1637070-d38a-4a7e-b831-3b8f123a4805",
+      "top_rerank_score": 0.9986178874969482
+    },
+    {
+      "question_id": "Q2",
+      "label": "answerable",
+      "top_chunk_id": "b1637070-d38a-4a7e-b831-3b8f123a4805",
+      "top_rerank_score": 0.9992225170135498
+    },
+    {
+      "question_id": "Q3",
+      "label": "answerable",
+      "top_chunk_id": "139dd749-132b-453a-b8ab-88ebf79bc4b3",
+      "top_rerank_score": 0.4691183865070343
+    },
+    {
+      "question_id": "Q4",
+      "label": "answerable",
+      "top_chunk_id": "ae925c5a-ead2-45a1-973c-5fe95c5cf0af",
+      "top_rerank_score": 0.9910014271736145
+    },
+    {
+      "question_id": "Q5",
+      "label": "answerable",
+      "top_chunk_id": "d63bf22a-fe1e-4869-abb2-f414aafe35f6",
+      "top_rerank_score": 0.9843851327896118
+    },
+    {
+      "question_id": "Q6",
+      "label": "answerable",
+      "top_chunk_id": "b694069e-d506-487d-9d31-cc83adcb36fa",
+      "top_rerank_score": 0.678825318813324
+    },
+    {
+      "question_id": "Q7",
+      "label": "answerable",
+      "top_chunk_id": "c7a50be9-8d45-4391-ba5b-535df061c060",
+      "top_rerank_score": 0.9937134385108948
+    },
+    {
+      "question_id": "Q8",
+      "label": "answerable",
+      "top_chunk_id": "1a86312d-0007-47af-a6a6-340bad32bcc5",
+      "top_rerank_score": 0.9758980870246887
+    },
+    {
+      "question_id": "Q9",
+      "label": "partial",
+      "top_chunk_id": "cb5088c2-1abf-48b9-9d87-41ba21d1bb51",
+      "top_rerank_score": 0.9758342504501343
+    },
+    {
+      "question_id": "Q10",
+      "label": "partial",
+      "top_chunk_id": "6735df95-e536-4491-82a1-633b96ddfbeb",
+      "top_rerank_score": 0.7595937252044678
+    },
+    {
+      "question_id": "Q11",
+      "label": "partial",
+      "top_chunk_id": "e24c7456-70d0-4160-a4cb-12b9d480176d",
+      "top_rerank_score": 0.9904170036315918
+    },
+    {
+      "question_id": "Q12",
+      "label": "partial",
+      "top_chunk_id": "f937bc8e-245c-406d-bad2-53a2a0405d52",
+      "top_rerank_score": 0.23527389764785767
+    },
+    {
+      "question_id": "Q13",
+      "label": "unanswerable",
+      "top_chunk_id": "642dd8aa-8134-4aa9-87f1-d60f82a31669",
+      "top_rerank_score": 0.022558605298399925
+    },
+    {
+      "question_id": "Q14",
+      "label": "unanswerable",
+      "top_chunk_id": "34f2c3e7-fe88-4487-a1c8-3ec85fcce146",
+      "top_rerank_score": 0.05031167343258858
+    },
+    {
+      "question_id": "Q15",
+      "label": "unanswerable",
+      "top_chunk_id": "2fca43b0-9e3a-4bf9-9d8a-329ac9aeff55",
+      "top_rerank_score": 3.745141293620691e-05
+    },
+    {
+      "question_id": "Q16",
+      "label": "unanswerable",
+      "top_chunk_id": "bcc7a849-1fc9-4231-8b15-72b126eda082",
+      "top_rerank_score": 0.7523197531700134
+    },
+    {
+      "question_id": "Q17",
+      "label": "unanswerable",
+      "top_chunk_id": "ba8ace2e-1869-4f57-8daf-35f33b57842f",
+      "top_rerank_score": 0.6115456223487854
+    }
+  ],
+  "sweep": [
+    {
+      "tau": -0.01,
+      "abstention_precision": null,
+      "abstention_recall": 0.0,
+      "false_answers": 5,
+      "false_refusals": 0,
+      "correct_abstains": 0,
+      "correct_answers": 8
+    },
+    {
+      "tau": 0.0113,
+      "abstention_precision": 1.0,
+      "abstention_recall": 0.2,
+      "false_answers": 4,
+      "false_refusals": 0,
+      "correct_abstains": 1,
+      "correct_answers": 8
+    },
+    {
+      "tau": 0.0364,
+      "abstention_precision": 1.0,
+      "abstention_recall": 0.4,
+      "false_answers": 3,
+      "false_refusals": 0,
+      "correct_abstains": 2,
+      "correct_answers": 8
+    },
+    {
+      "tau": 0.2597,
+      "abstention_precision": 1.0,
+      "abstention_recall": 0.6,
+      "false_answers": 2,
+      "false_refusals": 0,
+      "correct_abstains": 3,
+      "correct_answers": 8
+    },
+    {
+      "tau": 0.5403,
+      "abstention_precision": 0.75,
+      "abstention_recall": 0.6,
+      "false_answers": 2,
+      "false_refusals": 1,
+      "correct_abstains": 3,
+      "correct_answers": 7
+    },
+    {
+      "tau": 0.6452,
+      "abstention_precision": 0.8,
+      "abstention_recall": 0.8,
+      "false_answers": 1,
+      "false_refusals": 1,
+      "correct_abstains": 4,
+      "correct_answers": 7
+    },
+    {
+      "tau": 0.7156,
+      "abstention_precision": 0.667,
+      "abstention_recall": 0.8,
+      "false_answers": 1,
+      "false_refusals": 2,
+      "correct_abstains": 4,
+      "correct_answers": 6
+    },
+    {
+      "tau": 0.8641,
+      "abstention_precision": 0.714,
+      "abstention_recall": 1.0,
+      "false_answers": 0,
+      "false_refusals": 2,
+      "correct_abstains": 5,
+      "correct_answers": 6
+    },
+    {
+      "tau": 0.9801,
+      "abstention_precision": 0.625,
+      "abstention_recall": 1.0,
+      "false_answers": 0,
+      "false_refusals": 3,
+      "correct_abstains": 5,
+      "correct_answers": 5
+    },
+    {
+      "tau": 0.9877,
+      "abstention_precision": 0.556,
+      "abstention_recall": 1.0,
+      "false_answers": 0,
+      "false_refusals": 4,
+      "correct_abstains": 5,
+      "correct_answers": 4
+    },
+    {
+      "tau": 0.9924,
+      "abstention_precision": 0.5,
+      "abstention_recall": 1.0,
+      "false_answers": 0,
+      "false_refusals": 5,
+      "correct_abstains": 5,
+      "correct_answers": 3
+    },
+    {
+      "tau": 0.9962,
+      "abstention_precision": 0.455,
+      "abstention_recall": 1.0,
+      "false_answers": 0,
+      "false_refusals": 6,
+      "correct_abstains": 5,
+      "correct_answers": 2
+    },
+    {
+      "tau": 0.9989,
+      "abstention_precision": 0.417,
+      "abstention_recall": 1.0,
+      "false_answers": 0,
+      "false_refusals": 7,
+      "correct_abstains": 5,
+      "correct_answers": 1
+    },
+    {
+      "tau": 1.0092,
+      "abstention_precision": 0.385,
+      "abstention_recall": 1.0,
+      "false_answers": 0,
+      "false_refusals": 8,
+      "correct_abstains": 5,
+      "correct_answers": 0
+    }
+  ],
+  "n_questions": 17,
+  "n_scored_answerable_or_unanswerable": 13,
+  "n_partial_excluded_from_metrics": 4,
+  "n_missing_scores": 0,
+  "chosen_tau": 0.8641,
+  "chosen_tau_stats": {
+    "tau": 0.8641,
+    "abstention_precision": 0.714,
+    "abstention_recall": 1.0,
+    "false_answers": 0,
+    "false_refusals": 2,
+    "correct_abstains": 5,
+    "correct_answers": 6
+  },
+  "selection_rule": "Minimize false_answers first, then false_refusals, then prefer the smallest (least aggressive) tau among ties.",
+  "caveat": "Calibrated on only 13 labeled answerable/unanswerable questions against a single ingested document. This is a small-sample estimate, not a statistically robust threshold \u2014 re-run this script as more eval questions and documents are added, and update ABSTENTION_TAU in app/core/config.py accordingly."
+}
